@@ -17,3 +17,8 @@
 @import "custom/cards";
 @import "custom/footer";
 @import "custom/utilities";
+
+.card-img-top {
+    height: 230px;
+	object-fit: scale-down;
+}
