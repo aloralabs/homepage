@@ -1,0 +1,22 @@
+.btn {
+    font-size: $font-size-sm;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &:hover,
+    .btn-group & {
+        box-shadow: none;
+    }
+}
+
+.btn-sm {
+    font-size: 0.75rem;
+}
+
+.btn-lg {
+    font-size: 1.15rem;
+}
+
+.btn-pill {
+    border-radius: 10rem;
+}

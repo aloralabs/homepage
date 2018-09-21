@@ -1,0 +1,32 @@
+.icon {
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 1.5rem;
+    position: relative;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+}
+
+.icon-sm {
+    font-size: $font-size-sm;
+    width: 2rem;
+    height: 2rem;
+}
+
+.icon-lg {
+    font-size: 1.75rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.icon-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@each $color, $value in $theme-colors {
+    @include icon-variant(".icon-#{$color}", $value);
+}

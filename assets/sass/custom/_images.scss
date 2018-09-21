@@ -1,0 +1,52 @@
+.avatar {
+    border-radius: 50%;
+}
+
+.avatar-sm {
+    width: 48px;
+    height: 48px;
+}
+
+.avatar-md {
+    width: 64px;
+    height: 64px;
+}
+
+.avatar-lg {
+    width: 86px;
+    height: 86px;
+}
+
+.iphone-x {
+    background-color: theme-color("light");
+    border-radius: 36px;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.15), 0 20px 36px rgba($black, .15);
+    width: 280px;
+    height: 540px;
+    position: relative;
+
+    &:after {
+        content: '';
+        background-color: theme-color("light");
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 130px;
+        height: 16px;
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .screen {
+        background: gray("900");
+        background-size: cover;
+        border-radius: 25px;
+        box-shadow: inset 0 0 10px rgba(0,0,0,.15);
+        width: calc(100% - 30px);
+        height: calc(100% - 30px);
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+}

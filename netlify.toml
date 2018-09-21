@@ -1,0 +1,10 @@
+[context.production.environment]
+HUGO_VERSION = "0.48"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.48"
+
+[[redirects]]
+# from = "https://aloralabs.netlify.com/*"
+# to = "https://aloralabs.com/:splat"
+# force = true
