@@ -80,36 +80,19 @@
 
         <!-- Pricing cards -->
         <div class="row py-5">
+            {{ range first 5 (where .Data.Pages "Type" "project") }}
             <div class="col-lg-4">
-                <div class="card card-hover">
-                    <img class="card-img-top" src="/img/cactus.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Card default</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-pill btn-primary btn-sm">Go somewhere</a>
+                <a href="{{ .RelPermalink }}">
+                    <div class="card card-hover">
+                        <img class="card-img-top" src="{{ .Params.image }}" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ .Title }}</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-            <div class="col-lg-4">
-                <div class="card card-hover">
-                    <img class="card-img-top" src="/img/beach.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Card rising</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-pill btn-primary btn-sm">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card card-hover">
-                    <img class="card-img-top" src="/img/cactus.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Card default</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-pill btn-primary btn-sm">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
+            {{ end }}
         </div>
     </div>
     <hr class="sep border-primary">
