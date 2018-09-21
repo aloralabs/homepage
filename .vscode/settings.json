@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/node_modules": true,
+        "public": true,
+        "resources": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "public": true,
+        "resources": true
+    }
+}

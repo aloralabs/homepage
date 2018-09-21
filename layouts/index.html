@@ -80,15 +80,14 @@
     <div class="row py-5">
         {{ range first 5 (where .Data.Pages "Type" "project") }}
         <div class="col-lg-4">
-            <a href="{{ .RelPermalink }}">
-                <div class="card card-hover">
-                    <img class="card-img-top" src="{{ .Params.image }}" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ .Title }}</h5>
-                        <p class="card-text">{{ .Params.description }}</p>
-                    </div>
+            <div class="card card-hover">
+                <img class="card-img-top" src="{{ .RelPermalink }}{{ .Params.image }}" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">{{ .Title }}</h5>
+                    <p class="card-text">{{ .Params.description }}</p>
+                    <a href="{{ .RelPermalink }}" class="btn btn-pill btn-primary btn-sm">Read more</a>
                 </div>
-            </a>
+            </div>
         </div>
         {{ end }}
     </div>
