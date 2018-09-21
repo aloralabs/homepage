@@ -1,0 +1,23 @@
+.navbar {
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-sm;
+    }
+}
+
+.navbar-brand > img {
+    max-height: 30px;
+    width: auto;
+}
+
+.navbar-nav {
+
+    .dropdown-menu {
+        @include media-breakpoint-up(lg) {
+            font-size: ($font-size-base * 0.825);
+        }
+    }
+
+    .dropdown-item + .dropdown-item {
+        border-top: 1px solid gray("200");
+    }
+}

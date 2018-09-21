@@ -1,0 +1,32 @@
+html {
+    font-size: 1rem;
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 1.125rem;
+    }
+}
+
+.blockquote {
+    color: gray("800");
+    line-height: 1.6;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+    &::before {
+        content: "\f10d";
+        display: block;
+        font-family: "Font Awesome 5 Free";
+        font-size: $font-size-sm;
+        font-weight: 600;
+        height: 0;
+        left: -1.25rem;
+        top: -0.25rem;
+        position: relative;
+    }
+}
+
+cite {
+    font-style: normal;
+}

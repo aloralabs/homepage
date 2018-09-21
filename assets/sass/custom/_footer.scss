@@ -1,0 +1,15 @@
+.site-footer {
+    @include media-breakpoint-up(md) {
+        font-size: $font-size-sm;
+    }
+
+    a {
+        color: theme-color("secondary");
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: theme-color("dark");
+        }
+    }
+}

@@ -1,0 +1,23 @@
+// Custom variables
+@import "custom/mixins";
+@import "custom/variables";
+
+// Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom components
+@import "custom/type";
+@import "custom/links";
+@import "custom/buttons";
+@import "custom/icons";
+@import "custom/images";
+@import "custom/navbar";
+@import "custom/accordion";
+@import "custom/alerts";
+@import "custom/cards";
+@import "custom/footer";
+@import "custom/utilities";
+
+textarea {
+    // min-height: 18rem;
+}

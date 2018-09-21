@@ -1,0 +1,11 @@
+@mixin icon-variant($parent, $color) {
+    #{$parent} {
+        background-color: rgba($color, .1);
+        color: $color !important;
+
+        &[href]:hover {
+            background-color: $color;
+            color: $white !important;
+        }
+    }
+}

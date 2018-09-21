@@ -1,0 +1,6 @@
+# Hugo
+/public
+/node_modules
+
+*.log
+.DS_Store
