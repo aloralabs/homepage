@@ -3,9 +3,11 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 
 [[menu.main]]
-name = "Projects"
-url = "/#projects"
-
-[[menu.main]]
 name = "Home"
 url = "/"
+weight = 10
+
+[[menu.main]]
+name = "Projects"
+url = "/#projects"
+weight = 20
