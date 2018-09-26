@@ -79,12 +79,12 @@
     <div class="row py-5">
         {{ range first 5 (where .Data.Pages "Type" "project") }}
         <div class="col-lg-4">
-            <div class="card card-hover">
+            <div class="card">
                 <img class="card-img-top" src="{{ .RelPermalink }}{{ .Params.image }}" alt="">
                 <div class="card-body">
                     <h5 class="card-title">{{ .Title }}</h5>
                     <p class="card-text">{{ .Params.description }}</p>
-                    <a href="{{ .RelPermalink }}" onClick=”ga(send, event,  read more, click, home page projects;” class="btn btn-pill btn-primary btn-sm">Read more</a>
+                    <a href="{{ .RelPermalink }}" onClick="ga('send', 'event', 'read more', 'click home page projects')" class="btn btn-pill btn-primary btn-sm">Read more</a>
                 </div>
             </div>
         </div>
