@@ -16,15 +16,18 @@ menu:
                 <form name="contact" netlify>
                     <div class="form-group">
                         <label for="inputName" class="small text-uppercase">Name <span class="text-primary">*</span></label>
-                        <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+                        <input name="name" type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
                     </div>
                     <div class="form-group">
                         <label for="inputEmail" class="small text-uppercase">Email <span class="text-primary">*</span></label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email address" required>
+                        <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Enter your email address" required>
                     </div>
                     <div class="form-group">
                         <label for="messageTetxarea" class="small text-uppercase">Message <span class="text-primary">*</span></label>
-                        <textarea class="form-control rounded" id="messageTetxarea" rows="9" placeholder="What would you like to discuss?" required></textarea>
+                        <textarea name="message" class="form-control rounded" id="messageTetxarea" rows="9" placeholder="What would you like to discuss?" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div netlify-recaptcha></div>
                     </div>
                     <button type="submit" class="btn btn-pill btn-primary">Submit</button>
                 </form>
