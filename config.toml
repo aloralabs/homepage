@@ -1,6 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Alora Labs"
+googleAnalytics = "UA-126455348-1"
 
 [[menu.main]]
 name = "Home"
@@ -11,5 +12,3 @@ weight = 10
 name = "Projects"
 url = "/#projects"
 weight = 20
-
-googleAnalytics = "UA-126455348-1"
