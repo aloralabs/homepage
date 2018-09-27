@@ -1,13 +1,8 @@
 {
-  "name": "alora-boost",
+  "name": "aloralabs",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "description": "Alora Labs company website",
+  "license": "UNLICENSE",
   "dependencies": {
     "autotrack": "^2.4.1",
     "bootstrap": "^4.1.3",
