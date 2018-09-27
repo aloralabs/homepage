@@ -1,4 +1,5 @@
-baseURL = "http://example.org/"
+baseURL = "http://aloralabs.com/"
+description = "Inovation, ideation, creation, salvation!"
 languageCode = "en-us"
 title = "Alora Labs"
 googleAnalytics = "UA-126455348-1"
