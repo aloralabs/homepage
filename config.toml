@@ -1,8 +1,13 @@
 baseURL = "http://aloralabs.com/"
-description = "Inovation, ideation, creation, salvation!"
 languageCode = "en-us"
 title = "Alora Labs"
+
 googleAnalytics = "UA-126455348-1"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+description = "Inovation, ideation, creation, salvation!"
 
 [[menu.main]]
 name = "Home"
