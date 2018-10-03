@@ -7,7 +7,7 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
-description = "Inovation, ideation, creation, salvation!"
+description = "A Toronto-based development agency that lives at the intersection of usability and functionality, acting as a catalyst for teams bringing technology products to market."
 
 [[menu.main]]
 name = "Home"
