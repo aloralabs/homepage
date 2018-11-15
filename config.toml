@@ -4,7 +4,7 @@ title = "Alora Labs"
 
 googleAnalytics = "UA-126455348-1"
 enableRobotsTXT = true
-disableKinds = ["taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "section", "taxonomyTerm"]
 
 [params]
 description = "A Toronto-based development agency that lives at the intersection of usability and functionality, acting as a catalyst for teams bringing technology products to market."
