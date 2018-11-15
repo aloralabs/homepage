@@ -1,6 +1,7 @@
 # Hugo
 /public
 /node_modules
+/resources
 
 *.log
 .DS_Store
