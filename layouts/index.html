@@ -83,7 +83,7 @@
 <div class="container">
     <h2 class="text-center mt-5 mb-4" id="projects">Check out some of our past work</h2>
     <div class="row py-5">
-        {{ range first 6 (where .Data.Pages.ByWeight "Type" "project") }}
+        {{ range first 3 (where .Data.Pages.ByWeight "Type" "project") }}
         <div class="col-lg-4 mb-4">
             <div class="card h-100">
                 <img class="card-img-top" src="{{ .RelPermalink }}{{ .Params.image }}" alt="">
