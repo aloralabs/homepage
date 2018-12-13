@@ -8,3 +8,13 @@ HUGO_VERSION = "0.48"
 from = "https://aloralabs.netlify.com/*"
 to = "https://aloralabs.com/:splat"
 force = true
+
+[[redirects]]
+from = "https://aloralabs.netlify.com/*"
+to = "https://aloralabs.com/:splat"
+force = true
+
+[[redirects]]
+from = "https://aloraengineering.com/*"
+to = "https://aloralabs.com/:splat"
+force = true
