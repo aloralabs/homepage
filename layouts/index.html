@@ -4,8 +4,8 @@
 <div class="container mb-lg-3">
     <div class="row justify-content-center py-4 py-md-5 py-lg-6">
         <div class="col-lg-9 text-center py-4">
-            <h1 class="display-2 mb-4 font-weight-bold">The catalyst you need</h1>
-            <p class="lead mb-4">An innovation agency that lives at the intersection of usability and functionality, acting as a catalyst for teams bringing products to market.</p>
+            <h1 class="display-2 mb-4 font-weight-bold">Do you need technical expertise?</h1>
+            <p class="lead mb-4">From start-ups to public companies -- industry-leading teams lean on us to lead their innovation and accelerate their development.</p>
             <a class="btn btn-pill btn-primary" href="#services">Learn More</a>
         </div>
     </div>
@@ -52,8 +52,11 @@
                 <img src="/img/strategy.svg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-5">
-                <h2 class="h2">Tech Strategy</h2>
-                <p class="mb-4">We define exactly what you are trying to achieve and design a roadmap to get there. The vision is only the beginning, the execution is what sets us apart.</p>
+                <h2 class="h2">Product Management</h2>
+                <p class="mb-4">
+                    <span style="font-style: italic">Before diving into development, let's strategize.
+                    </span><br><br>
+                Let's put together a product roadmap, craft user stories and prioritize a backlog before starting any sprints.</p>
                 <!--<a class="link-cta" href="#">Get started</a>-->
             </div>
         </div>
@@ -63,7 +66,9 @@
             </div>
             <div class="col-lg-5 order-lg-1">
                 <h2 class="h2">Custom Development</h2>
-                <p class="mb-4">Bespoke development that aligns with your business needs and technical requirements.</p>
+                <p class="mb-4">
+                    <span style="font-style: italic">Your product roadmap is in place and you’re ready to begin development.</span><br><br>We offer bespoke development that aligns with your business needs and technical requirements.
+                </p>
                 <!--<a class="link-cta" href="#">Contact Us</a>-->
             </div>
         </div>
@@ -72,8 +77,11 @@
                 <img src="/img/data.svg" class="img-fluid" alt="">
             </div>
             <div class="col-lg-5">
-                <h2 class="h2">Data Analysis</h2>
-                <p class="mb-4">Optimizing revenue potential through data mining & developing custom data models and algorithms.</p>
+                <h2 class="h2">Data Analysis & Algorithms</h2>
+                <p class="mb-4">Your products have been in the market for some time now and you’ve collected quite a bit of data. <span style="font-style: italic">What now?</span>
+                <br><br>
+                    Our data team can help you uncover new opportunities by analyzing your data and creating algorithms and data models.
+                </p>
                 <!--<a class="link-cta" href="#">Get started</a>-->
             </div>
         </div>
@@ -83,14 +91,14 @@
 <div class="container">
     <h2 class="text-center mt-5 mb-4" id="projects">Check out some of our past work</h2>
     <div class="row py-5">
-        {{ range first 3 (where .Data.Pages.ByWeight "Type" "project") }}
+        {{ range first 6 (where .Data.Pages.ByWeight "Type" "project") }}
         <div class="col-lg-4 mb-4">
             <div class="card h-100">
                 <img class="card-img-top" src="{{ .RelPermalink }}{{ .Params.image }}" alt="">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title mb-1">{{ .Title }}</h5>
                     <p class="card-text flex-grow-1">{{ .Params.description }}</p>
-                    <a href="{{ .RelPermalink }}" onClick="ga('send', 'event', 'read more', 'click home page projects')" class="btn btn-pill btn-primary btn-sm align-self-start">Read more</a>
+                    <a href="{{ .RelPermalink }}" class="btn btn-pill btn-primary btn-sm align-self-start stretched-link">Read more</a>
                 </div>
             </div>
         </div>
@@ -105,7 +113,7 @@
     <div class="text-center">
         <h2 class="mb-4">Interested in learning more?</h2>
         <div class="mb-4">
-            <a class="btn btn-pill btn-primary" href="/contact" role="button">Contact Us Today</a>
+            <a id="contact-us-button-home" class="btn btn-pill btn-primary" href="/contact" role="button">Contact Us Today</a>
         </div>
     </div>
 </div>

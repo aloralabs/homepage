@@ -6,7 +6,7 @@
         {
             "label": "hugo",
             "type": "shell",
-            "command": "hugo serve",
+            "command": "hugo serve --buildDrafts",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
