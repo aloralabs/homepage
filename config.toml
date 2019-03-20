@@ -8,7 +8,7 @@ disableKinds = ["taxonomy", "section", "taxonomyTerm"]
 enableGitInfo = true
 
 [params]
-description = "A Toronto-based development agency that lives at the intersection of usability and functionality, acting as a catalyst for teams bringing technology products to market."
+description = "A Toronto-based development agency that lives at the intersection of hardware and digital, acting as a catalyst for teams bringing products to market."
 
 [[menu.main]]
 name = "Home"
