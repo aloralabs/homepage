@@ -10,6 +10,9 @@ enableGitInfo = true
 [params]
 description = "A Toronto-based development agency that lives at the intersection of hardware and digital, acting as a catalyst for teams bringing products to market."
 
+[imaging]
+quality = 100
+
 [[menu.main]]
 name = "Home"
 url = "/"
