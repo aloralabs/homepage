@@ -23,7 +23,8 @@ $enable-shadows:    true;
 // Spacing
 $spacer: 1rem;
 $spacers: (
-    6: ($spacer * 5)
+    6: ($spacer * 5),
+    7: ($spacer * 8)
 );
 
 // Links
@@ -45,15 +46,17 @@ $box-shadow-sm:         0 .125rem .25rem rgba($black, .075);
 $box-shadow:            0 .5rem 1rem rgba($black, .15);
 $box-shadow-lg:         0 1rem 3rem rgba($black, .175);
 
-// Fonts
+// Typography
 
-$font-family-serif:     "Merriweather", serif;
-$font-family-sans-serif: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-family-base:      $font-family-sans-serif;
+$font-family-serif:         "Neuton", serif;
+$font-family-sans-serif:    "Montserrat", sans-serif;
+$font-family-base:          $font-family-sans-serif;
 
 $font-size-base:            1rem;
 
-$headings-font-family:      "Neuton", $font-family-serif;
+$h3-font-size:              1.75rem;
+
+$headings-font-family:      $font-family-serif;
 $headings-font-weight:      700;
 $headings-line-height:      1.3;
 
@@ -65,15 +68,15 @@ $display3-size:             3.25rem;
 $display4-size:             2.75rem;
 $display-line-height:       1.3;
 
-$display1-weight: 700;
-$display2-weight: 700;
+$display1-weight:           700;
+$display2-weight:           700;
 
 $blockquote-font-size:      ($font-size-base * 1.125);
 
 // Alerts
 
-$alert-padding-y:           1rem !default;
-$alert-padding-x:           1.5rem !default;
+$alert-padding-y:           1rem;
+$alert-padding-x:           1.5rem;
 $alert-border-radius:       0;
 $alert-border-width:        0;
 $alert-bg-level:            0;
@@ -92,7 +95,7 @@ $btn-border-width:          2px;
 // Forms
 
 $input-padding-y:           0.875rem;
-$input-padding-x:           0.875rem;
+$input-padding-x:           1rem;
 $input-padding-y-sm:        0.5rem;
 $input-padding-x-sm:        0.75rem;
 $input-padding-y-lg:        1rem;
@@ -116,6 +119,8 @@ $dropdown-item-padding-y:   0.75rem;
 
 // Navbar
 
+$navbar-padding-y:                  0;
+$navbar-padding-x:                  0;
 $navbar-nav-link-padding-x:         1.25rem;
 $navbar-light-color:                map-get($theme-colors, "dark");
 $navbar-light-hover-color:          map-get($theme-colors, "primary");
@@ -123,14 +128,27 @@ $navbar-light-active-color:         map-get($theme-colors, "primary");
 $navbar-toggler-padding-x:          0.5rem;
 $navbar-light-toggler-border-color: transparent;
 
+// Pagination
+
+$pagination-padding-y:              .75rem;
+$pagination-padding-x:              1rem;
+$pagination-padding-y-sm:           .25rem;
+$pagination-padding-x-sm:           .65rem;
+$pagination-padding-y-lg:           .9rem;
+$pagination-padding-x-lg:           1.5rem;
+$pagination-line-height:            1;
+$pagination-color:                  map-get($theme-colors, "dark");
+$pagination-hover-color:            $white;
+$pagination-hover-bg:               map-get($theme-colors, "primary");
+
 // Cards
 
-$card-border-radius:        $border-radius-lg;
+$card-border-radius:                $border-radius-lg;
 
 // Image thumbnails
 
-$thumbnail-padding:         .5rem;
-$thumbnail-bg:              map-get($theme-colors, "light");
-$thumbnail-border-width:    0;
-$thumbnail-border-radius:   $border-radius;
-$thumbnail-box-shadow:      $box-shadow-lg;
+$thumbnail-padding:                 .5rem;
+$thumbnail-bg:                      map-get($theme-colors, "light");
+$thumbnail-border-width:            0;
+$thumbnail-border-radius:           $border-radius;
+$thumbnail-box-shadow:              $box-shadow;

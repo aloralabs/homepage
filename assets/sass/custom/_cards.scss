@@ -1,12 +1,21 @@
 .card {
     border: 0;
     box-shadow: $box-shadow-sm;
-    transition: all 0.15s ease-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .card-hover:hover {
     box-shadow: $box-shadow;
     transform: translateY(-3px);
+}
+
+.card-title a {
+    color: $gray-900;
+
+    &:hover,
+    &:focus {
+        color: theme-color("primary");
+    }
 }
 
 .card-price {

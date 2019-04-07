@@ -9,7 +9,10 @@
             padding: 1.5rem;
 
             a {
+                display: block;
+
                 .rotate-icon {
+                    line-height: 1.25;
                     transition: transform 0.2s ease-in-out;
                 }
 

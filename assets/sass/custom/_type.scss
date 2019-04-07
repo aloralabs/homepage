@@ -21,9 +21,15 @@ html {
         font-size: $font-size-sm;
         font-weight: 600;
         height: 0;
-        left: -1.25rem;
+        left: -1.5rem;
         top: -0.25rem;
         position: relative;
+    }
+
+    &.text-center::before {
+        left: 0;
+        top: -0.5rem;
+        margin: 0 auto 1rem;
     }
 }
 

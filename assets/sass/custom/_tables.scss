@@ -1,0 +1,29 @@
+.table {
+
+    thead th {
+        border: 0;
+    }
+
+    th {
+        font-weight: normal;
+    }
+}
+
+@each $color, $value in $theme-colors {
+    @include table-row-variant($color, theme-color($color));
+    .table-#{$color} {
+      color: color-yiq($value);
+    }
+}
+
+.pricing-table {
+
+    th,td {
+        padding: 1.5rem;
+        vertical-align: middle;
+
+        &:not(:last-child) {
+            border-right: 1px solid $border-color;
+        }
+    }
+}

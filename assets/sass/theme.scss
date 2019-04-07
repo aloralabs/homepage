@@ -12,9 +12,11 @@
 @import "custom/icons";
 @import "custom/images";
 @import "custom/navbar";
+@import "custom/pagination";
 @import "custom/accordion";
 @import "custom/alerts";
 @import "custom/cards";
+@import "custom/tables";
 @import "custom/footer";
 @import "custom/utilities";
 
@@ -22,7 +24,6 @@
     height: 230px;
 	object-fit: scale-down;
 }
-
 
 .navbar-brand > img {
     max-height: 50px;
@@ -46,12 +47,6 @@ h5, .h5 {
 .navbar {
     font-size: $font-size-base;
 }
-
-
-/*.card.h-100:hover{
-    box-shadow: 0 0 2rem rgba(0,0,0,.2);
-    transform: scale(1.05);
-}*/
 
 html {
   scroll-behavior: smooth;

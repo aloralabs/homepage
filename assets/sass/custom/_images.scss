@@ -17,6 +17,15 @@
     height: 86px;
 }
 
+.img-thumbnail {
+    transition: all 0.2s ease-in-out;
+
+    a:hover & {
+        box-shadow: $box-shadow-lg;
+        transform: translateY(-5px);
+    }
+}
+
 .iphone-x {
     background-color: theme-color("light");
     border-radius: 36px;

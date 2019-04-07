@@ -1,6 +1,5 @@
 @each $color, $value in $theme-colors {
     .alert-#{$color} {
-        background-color: $color;
         color: color-yiq($value);
     }
 }
