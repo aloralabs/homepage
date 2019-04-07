@@ -1,0 +1,6 @@
+@for $i from 1 through 9 {
+    $height: ($i * 10);
+    .min-vh-#{$height} {
+        min-height: #{$height}vh;
+    }
+}

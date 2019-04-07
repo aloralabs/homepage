@@ -11,6 +11,20 @@
 
 .navbar-nav {
 
+    @include media-breakpoint-down(md) {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        .nav-item + .nav-item {
+            border-top: 1px solid $gray-200;
+        }
+
+        .nav-link {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+    }
+
     .dropdown-menu {
         @include media-breakpoint-up(lg) {
             font-size: ($font-size-base * 0.825);
