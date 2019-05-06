@@ -5,10 +5,11 @@
     {{ .Hugo.Generator }}
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+    <meta http-equiv="Content-Security-Policy" content="default-src https:">
     <title>{{ .Title }}</title>
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-9ralMzdK1QYsk4yBY680hmsb4/hJ98xK3w0TIaJ3ll4POWpWUYaA2bRjGGujGT8w" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Neuton:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="//pro.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-9ralMzdK1QYsk4yBY680hmsb4/hJ98xK3w0TIaJ3ll4POWpWUYaA2bRjGGujGT8w" crossorigin="anonymous">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700|Neuton:400,700" rel="stylesheet">
 
     {{ $sass := resources.Get "sass/theme.scss" }}
     {{ $options := (dict "enableSourceMap" true "outputStyle" "compressed") }}

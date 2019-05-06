@@ -18,3 +18,10 @@ force = true
 from = "https://aloraengineering.com/*"
 to = "https://aloralabs.com/:splat"
 force = true
+
+[[headers]]
+for = "*"
+[headers.values]
+"Content-Security-Policy" = "frame-ancestors 'none'"
+"X-Frame-Options" = "DENY"
+"X-Content-Type-Options" = "nosniff"
