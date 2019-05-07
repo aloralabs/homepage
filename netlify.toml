@@ -23,7 +23,7 @@ force = true
 for = "*"
 [headers.values]
 "Strict-Transport-Security" = "max-age=63072000; includeSubDomains; preload"
-"Content-Security-Policy" = "object-src 'none'; script-src https: 'unsafe-inline'; style-src https: unsafe-inline"
+"Content-Security-Policy" = "object-src 'none'; script-src https: 'unsafe-inline'; style-src https: 'unsafe-inline'"
 "X-Frame-Options" = "DENY"
 "X-Content-Type-Options" = "nosniff"
 "X-XSS-Protection" = "1; mode=block"
