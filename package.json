@@ -6,6 +6,6 @@
   "dependencies": {
     "autotrack": "^2.4.1",
     "bootstrap": "^4.3.1",
-    "bootstrap.native": "^2.0.25"
+    "bootstrap.native": "^2.0.26"
   }
 }
