@@ -2,21 +2,20 @@
 <html lang="{{ .Site.LanguageCode }}">
 <head>
     <meta charset="utf-8">
-    {{ .Hugo.Generator }}
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
     <title>{{ .Title }}</title>
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-9ralMzdK1QYsk4yBY680hmsb4/hJ98xK3w0TIaJ3ll4POWpWUYaA2bRjGGujGT8w" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Neuton:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Neuton:400,700">
 
     {{ $sass := resources.Get "sass/theme.scss" }}
     {{ $options := (dict "enableSourceMap" true "outputStyle" "compressed") }}
     {{ $styles := $sass | resources.ToCSS $options | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ with .Params.Image }}{{ . }}{{ else }}/apple-touch-icon.png{{ end }}">
+    <link rel="manifest" href="/manifest.json">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -25,7 +24,6 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-W8LLLWB');</script>
     <!-- End Google Tag Manager -->
-
 </head>
 
 <body>
