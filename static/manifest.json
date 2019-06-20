@@ -1,0 +1,6 @@
+{
+    "$schema": "http://json.schemastore.org/web-manifest",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
