@@ -22,12 +22,12 @@ force = true
 [[headers]]
 for = "*"
 [headers.values]
-"Strict-Transport-Security" = "max-age=63072000; includeSubDomains; preload"
-"Content-Security-Policy" = "object-src 'none'; style-src https: 'unsafe-inline'; base-uri 'none'; frame-ancestors 'none'"
-"X-Frame-Options" = "DENY"
-"X-Content-Type-Options" = "nosniff"
-"X-XSS-Protection" = "1; mode=block"
-"Service-Worker-Allowed" = "/"
+Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+Content-Security-Policy = "object-src 'none'; style-src https: 'unsafe-inline'; base-uri 'none'; frame-ancestors 'none'"
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+X-XSS-Protection = "1; mode=block"
+Service-Worker-Allowed = "/"
 
 [build.processing]
 skip_processing = false
