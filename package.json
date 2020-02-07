@@ -5,7 +5,7 @@
   "license": "UNLICENSE",
   "dependencies": {
     "autotrack": "^2.4.1",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.1",
     "bootstrap.native": "^2.0.26"
   }
 }
