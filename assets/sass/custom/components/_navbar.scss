@@ -35,3 +35,14 @@
         border-top: 1px solid gray("200");
     }
 }
+
+.nav-docs {
+
+    a {
+        color: $gray-900;
+
+        &.active {
+            font-weight: bold;
+        }
+    }
+}
