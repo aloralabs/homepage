@@ -1,94 +1,45 @@
 ---
 title: Banana Accounting Snap
+client: Banana Accounting
+client_website: https://www.banana.ch/en
+industry: Accounting
+service: Deployment Automation
+technologies: Snapcraft, Linux, CI/CD
 description: Created a Linux Snap package so that Banana 9 can be distributed to any Linux distribution from a single package.
 image: landing_home_it.jpg
 ---
 
-<div class="container">
-    <h1 class="display-2 my-5 my-lg-6 text-center">Banana Accounting</h1>
-</div>
-<div class="bg-skew bg-skew-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <p class="text-center mb-5 mb-lg-6">We helped Banana Accounting deploy their software using snaps, an innovative new packaging format for Linux.</p>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="row text-center text-md-left">
-                    <div class="col-sm-6 col-md-3 mb-3">
-                        <span class="h5 d-block mb-2">
-                            Company
-                        </span>
-                        <p class="small text-secondary text-uppercase">
-                            <a href="https://www.banana.ch/en" target="_blank">Banana Accounting</a>
-                        </p>
-                    </div>
-                    <div class="col-sm-6 col-md-3 mb-3">
-                        <span class="h5 d-block mb-2">
-                            Industry
-                        </span>
-                        <p class="small text-secondary text-uppercase">
-                            Accounting Software
-                        </p>
-                    </div>
-                    <div class="col-sm-6 col-md-3 mb-3">
-                        <span class="h5 d-block mb-2">
-                            Service
-                        </span>
-                        <p class="small text-secondary text-uppercase">
-                            Software Deployments
-                        </p>
-                    </div>
-                    <div class="col-sm-6 col-md-3 mb-3">
-                        <span class="h5 d-block mb-2">
-                            Technologies
-                        </span>
-                        <p class="small text-secondary text-uppercase">
-                            Snap, Linux, CI/CD
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr class="sep border-primary mt-4 mb-5">
-
-        <div class="row justify-content-center">
-            <div class="col-lg-12">
-                <div class="row justify-content-lg-between align-items-lg-center py-4 py-lg-5">
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        {{< img src="linux-distributions.jpg" class="img-fluid img-thumbnail" >}}
-                    </div>
-                    <div class="col-lg-5">
-                        <h2 class="h3">The Problem</h2>
-                        <p>A common problem for software organizations looking to deploy on Linux is dealing with the dozens of different versions and distributions. Banana Accounting was no different in this regard. They had heard about <a href="https://snapcraft.io/">Snaps</a> as a possible solution to their problem but past attempts to bundle their existing software had not been successful.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-lg-between align-items-lg-center py-4 py-lg-5">
-            <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-                {{< img src="banana-snap.png" class="img-fluid img-thumbnail" >}}
-            </div>
-            <div class="col-lg-5 order-lg-1">
-                <h2 class="h3">The Solution</h2>
-                <p>Snaps are a sandboxed application distribution format which work across Linux on any distribution or version. Dependencies and assets are all bundled in a single archive which can be installed by end users through the <a href="https://snapcraft.io/store">Snap store</a>.</p>
-                <p>Alora Labs setup configuration and continuous integration scripts necessary to build on the free <a href="https://snapcraft.io/build">Snapcraft build service</a>.</p>
-            </div>
-        </div>
-
+<div class="row justify-content-center">
+    <div class="col-lg-12">
         <div class="row justify-content-lg-between align-items-lg-center py-4 py-lg-5">
             <div class="col-lg-6 mb-4 mb-lg-0">
-                {{< img src="landing_home_it.jpg" class="img-fluid img-thumbnail" >}}
+                {{< img src="linux-distributions.jpg" class="img-fluid img-thumbnail" >}}
             </div>
             <div class="col-lg-5">
-                <h2 class="h3">Results</h2>
-                <p>You can preview the latest version of Banana 9 <a href="https://snapcraft.io/banana-accounting">on the snap store</a>.</p>
+                <h2 class="h3">The Problem</h2>
+                <p>A common problem for software organizations looking to deploy on Linux is dealing with the dozens of different versions and distributions. Banana Accounting was no different in this regard. They had heard about <a href="https://snapcraft.io/">Snaps</a> as a possible solution to their problem but past attempts to bundle their existing software had not been successful.</p>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="row justify-content-lg-between align-items-lg-center py-4 py-lg-5">
+    <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+        {{< img src="banana-snap.png" class="img-fluid img-thumbnail" >}}
+    </div>
+    <div class="col-lg-5 order-lg-1">
+        <h2 class="h3">The Solution</h2>
+        <p>Snaps are a sandboxed application distribution format which work across Linux on any distribution or version. Dependencies and assets are all bundled in a single archive which can be installed by end users through the <a href="https://snapcraft.io/store">Snap store</a>.</p>
+        <p>Alora Labs setup configuration and continuous integration scripts necessary to build on the free <a href="https://snapcraft.io/build">Snapcraft build service</a>.</p>
+    </div>
+</div>
+
+<div class="row justify-content-lg-between align-items-lg-center py-4 py-lg-5">
+    <div class="col-lg-6 mb-4 mb-lg-0">
+        {{< img src="landing_home_it.jpg" class="img-fluid img-thumbnail" >}}
+    </div>
+    <div class="col-lg-5">
+        <h2 class="h3">Results</h2>
+        <p>You can preview the latest version of Banana 9 <a href="https://snapcraft.io/banana-accounting">on the snap store</a>.</p>
     </div>
 </div>
