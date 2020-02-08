@@ -9,6 +9,10 @@
     transform: translateY(-3px);
 }
 
+.card-img-top {
+    min-height: 1px; // IE11 workaround
+}
+
 .card-title a {
     color: $gray-900;
 

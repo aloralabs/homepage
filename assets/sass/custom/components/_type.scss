@@ -36,3 +36,23 @@ html {
 cite {
     font-style: normal;
 }
+
+// Prism.js syntax colors
+
+.token.doctype,
+.token.comment {
+    color: #6b7177 !important;
+}
+
+.token.attr-name {
+    color: #308115 !important;
+}
+
+.token.attr-value,
+.token.function {
+    color: #1f7592 !important;
+}
+
+.token.url {
+    color: #7c6854 !important;
+}
