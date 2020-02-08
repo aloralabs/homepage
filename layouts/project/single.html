@@ -1,0 +1,73 @@
+{{ define "main" }}
+
+<div class="container">
+    <h1 class="display-2 my-5 my-lg-6 text-center">{{ .Title }}</h1>
+</div>
+
+<div class="bg-skew bg-skew-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <p class="text-center mb-5 mb-lg-6">{{ .Description }}</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="row text-center text-md-left">
+                    <div class="col-sm-6 col-md-3 mb-3">
+                        <span class="h5 d-block mb-2">
+                            Company
+                        </span>
+                        <p class="small text-secondary text-uppercase">
+                            <a href="{{ .Params.client_website }}">
+                                {{ .Params.client }}
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-3">
+                        <span class="h5 d-block mb-2">
+                            Industry
+                        </span>
+                        <p class="small text-secondary text-uppercase">
+                            {{ .Params.industry }}
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-3">
+                        <span class="h5 d-block mb-2">
+                            Service
+                        </span>
+                        <p class="small text-secondary text-uppercase">
+                            {{ .Params.service }}
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-3">
+                        <span class="h5 d-block mb-2">
+                            Technologies
+                        </span>
+                        <p class="small text-secondary text-uppercase">
+                            {{ .Params.technologies }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="sep border-primary mt-4 mb-5">
+
+        {{ .Content }}
+
+        <!-- Call to action -->
+        <hr class="sep border-primary my-5">
+        <div class="container pb-4">
+            <div class="text-center">
+                <h2 class="mb-4">Interested in learning more?</h2>
+                <div class="mb-4">
+                    <a class="btn btn-pill btn-primary" href="/contact" role="button">Contact Us Today</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{{ end }}
