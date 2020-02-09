@@ -14,11 +14,6 @@ description = "A Toronto-based development agency that lives at the intersection
 quality = 100
 
 [[menu.main]]
-name = "Home"
-url = "/"
-weight = 10
-
-[[menu.main]]
-name = "Projects"
+name = "Portfolio"
 url = "/#projects"
 weight = 20
