@@ -1,13 +1,12 @@
+[build]
+publish = "public"
+command = "hugo --gc --minify"
+
 [context.production.environment]
 HUGO_VERSION = "0.62.2"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.62.2"
-
-[[redirects]]
-from = "https://aloralabs.netlify.com/*"
-to = "https://aloralabs.com/:splat"
-force = true
 
 [[redirects]]
 from = "https://aloralabs.netlify.com/*"
@@ -28,20 +27,3 @@ X-Frame-Options = "DENY"
 X-Content-Type-Options = "nosniff"
 X-XSS-Protection = "1; mode=block"
 Service-Worker-Allowed = "/"
-
-[build.processing]
-skip_processing = false
-
-[build.processing.html]
-pretty_urls = true
-
-[build.processing.images]
-compress = true
-
-[build.processing.css]
-bundle = false
-minify = false
-
-[build.processing.js]
-bundle = false
-minify = false
