@@ -2,4 +2,4 @@
 {{ $class := (.Get "class") }}
 {{ $img := $.Page.Resources.GetMatch (.Get "src")}}
 {{ $img = $img.Resize "1024x center" }}
-<img src="{{ $img.RelPermalink }}" alt="{{ $alt }}" width="{{ $img.Width }}" height="{{ $img.Height }}" class="{{ $class }}"/>
+<img src="{{ $img.RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}"/>
