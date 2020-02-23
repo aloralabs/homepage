@@ -1,15 +1,17 @@
 {{ define "main" }}
 
-<h1 class="display-4 py-5 text-center">Page not found</h1>
-<div class="bg-light mb-5 py-5 py-lg-6">
-    <div class="container text-center">
-        <div class="row justify-content-lg-center py-5">
-            <div class="col-lg-8">
-                <h2 class="mb-4">Error 404</h2>
-                <p class="lead">The page you are looking for no longer exists. Perhaps you can go to the <a href="index.html">homepage</a> and see if you can find what you are looking for.</p>
+<main id="main">
+    <div class="d-flex flex-column justify-content-center bg-skew bg-skew-light min-vh-70 overflow-hidden">
+        <div class="container">
+            <div class="row justify-content-lg-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 mb-5">Page not found</h1>
+                    <p class="lead mb-5">The page you are looking for does not exist. Please go to the home page by clicking the button below.</p>
+                    <a href="/" class="btn btn-primary rounded-pill">Go to home page</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</main>
 
 {{ end }}
