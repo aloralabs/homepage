@@ -14,7 +14,7 @@
 
     {{ $sass := resources.Get "sass/theme.scss" }}
     {{ $options := (dict "enableSourceMap" true "outputStyle" "compressed") }}
-    {{ $styles := $sass | resources.ToCSS $options | minify | fingerprint }}
+    {{ $styles := $sass | resources.ToCSS $options | resources.PostCSS | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
 
     {{ with .Params.Image }}
