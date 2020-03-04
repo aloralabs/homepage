@@ -5,7 +5,7 @@
   "license": "UNLICENSE",
   "repository": "github:eberkund/alora",
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.4",
     "autotrack": "^2.4.1",
     "bootstrap": "^4.4.1",
     "bootstrap.native": "^2.0.27",

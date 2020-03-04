@@ -6,6 +6,7 @@ googleAnalytics = "UA-126455348-1"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "section", "taxonomyTerm"]
 enableGitInfo = true
+inlineImports = true
 
 [params]
 description = "A Toronto-based development agency that lives at the intersection of hardware and digital, acting as a catalyst for teams bringing products to market."
