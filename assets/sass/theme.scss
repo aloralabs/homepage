@@ -37,3 +37,31 @@ h5, .h5 {
 html {
   scroll-behavior: smooth;
 }
+
+.btn {
+    font-size: .175rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: .475rem 0.75rem;
+}
+
+.img-fluid {
+    padding: 0px 50px;
+}
+
+.subtitle{
+    font-weight: bold !important;
+}
+
+.row{
+    padding: 0px!important;
+}
+
+.align-items-lg-center {
+    align-items:top;
+}
+
+.subheading{
+    margin-bottom: 4rem;
+     margin-top: 1rem;
+}
