@@ -2,6 +2,7 @@
 /public
 /node_modules
 /resources
+/hugo_stats.json
 
 *.log
 .DS_Store
