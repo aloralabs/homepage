@@ -73,3 +73,12 @@ html {
 .site-footer{
     font-size: 0.775rem;
 }
+
+.img-thumbnail {
+    padding: .5rem;
+    background-color: #f8f9fa;
+    border: 0 solid #dee2e6;
+    border-radius: .375rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    transition: all .2s ease-in-out;
+}
