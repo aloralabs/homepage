@@ -13,8 +13,8 @@
     <link rel="manifest" href="/manifest.json">
 
     {{ $sass := resources.Get "sass/theme.scss" }}
-    {{ $options := (dict "enableSourceMap" true "outputStyle" "compressed") }}
-    {{ $styles := $sass | resources.ToCSS $options | resources.PostCSS | fingerprint }}
+    {{ $options := (dict "enableSourceMap" true) }}
+    {{ $styles := $sass | resources.ToCSS $options | resources.PostCSS | fingerprint | resources.PostProcess }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
 
     {{ with .Params.Image }}
