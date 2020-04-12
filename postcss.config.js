@@ -10,7 +10,14 @@ module.exports = {
                 let els = JSON.parse(content).htmlElements
                 return els.tags.concat(els.classes, els.ids)
             },
-            whitelist: ['img-thumbnail', 'img-fluid']
+            whitelist: [
+                'img-thumbnail',
+                'img-fluid',
+                'collapse',
+                'collapse.show',
+                'collapsing',
+                'show'
+            ]
         })
     ]
 }
