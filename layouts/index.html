@@ -96,7 +96,7 @@
     <h1 class="text-center mt-5 mb-4" id="projects">Our Work</h1>
     <div class="row py-5">
         {{ range first 6 (where .Site.RegularPages.ByWeight "Type" "project") }}
-        {{ $image := .Resources.GetMatch .Params.image }}
+        {{ $image := .Resources.GetMatch "*feature*" }}
         {{ $image = $image.Fill "688x460 center" }}
         <div class="col-lg-4 mb-4">
             <div class="card card-hover h-100">

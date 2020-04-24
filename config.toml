@@ -13,6 +13,7 @@ writeStats = true
 
 [params]
 description = "A Toronto-based development agency that lives at the intersection of hardware and digital, acting as a catalyst for teams bringing products to market."
+images = ["/apple-touch-icon.png"]
 
 [imaging]
 quality = 100
