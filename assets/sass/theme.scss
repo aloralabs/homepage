@@ -15,7 +15,7 @@ button.hamburger {
 
 .card-img-top {
     height: 230px;
-	object-fit: scale-down;
+    object-fit: scale-down;
 }
 
 .navbar-brand > img {
@@ -29,10 +29,11 @@ button.hamburger {
 }
 
 .blockquote::before {
-    font-family: 'font awesome 5 pro';
+    font-family: "font awesome 5 pro";
 }
 
-h5, .h5 {
+h5,
+.h5 {
     font-family: $font-family-sans-serif;
     font-size: 1rem;
 }
@@ -42,54 +43,50 @@ h5, .h5 {
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .btn {
-    font-size: .75rem;
+    font-size: 0.75rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    padding: .475rem 0.75rem;
+    padding: 0.475rem 0.75rem;
 }
 
 .services .img-fluid {
     padding: 0px 50px;
 }
 
-.subtitle{
+.subtitle {
     font-weight: bold !important;
 }
 
-.services .row{
-    padding: 0px!important;
+.services .row {
+    padding: 0px !important;
 }
 
 .align-items-lg-center {
-    align-items:top;
+    align-items: top;
 }
 
-.services .subheading{
+.services .subheading {
     margin-bottom: 4rem;
-     margin-top: 1rem;
+    margin-top: 1rem;
 }
 
-.noTopPadding{
-    padding-top: 0px!important;
-}
-
-.site-footer{
+.site-footer {
     font-size: 0.775rem;
 }
 
 .img-thumbnail {
-    padding: .5rem;
+    padding: 0.5rem;
     background-color: #f8f9fa;
     border: 0 solid #dee2e6;
-    border-radius: .375rem;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
-    transition: all .2s ease-in-out;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease-in-out;
 }
 
 .accordion-arrow {
-    width:1em;
+    width: 1em;
 }
