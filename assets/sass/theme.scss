@@ -6,6 +6,10 @@
 @import "custom/components";
 @import "custom/user";
 
+.navbar-toggler {
+    outline: none;
+}
+
 .card-img-top {
     height: 230px;
 	object-fit: scale-down;
