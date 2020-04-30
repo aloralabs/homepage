@@ -13,8 +13,7 @@
     <link rel="manifest" href="/manifest.json">
 
     {{ $sass := resources.Get "sass/theme.scss" }}
-    {{ $options := (dict "enableSourceMap" true) }}
-    {{ $styles := $sass | resources.ToCSS $options | resources.PostCSS | fingerprint | resources.PostProcess }}
+    {{ $styles := $sass | resources.ToCSS | resources.PostCSS | fingerprint | resources.PostProcess }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
 
     <!-- Google Tag Manager -->
