@@ -16,7 +16,8 @@ module.exports = {
                 'collapse',
                 'collapse.show',
                 'collapsing',
-                'show'
+                'show',
+                'is-active'
             ]
         })
     ]
