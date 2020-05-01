@@ -8,13 +8,16 @@
     <title>{{ .Title }}</title>
     {{ template "_internal/opengraph.html" . }}
 
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="manifest" href="/manifest.json">
 
     {{ $sass := resources.Get "sass/theme.scss" }}
     {{ $styles := $sass | resources.ToCSS | resources.PostCSS | minify | fingerprint | resources.PostProcess }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+    <link rel="manifest" href="/manifest.json">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
