@@ -34,8 +34,8 @@
     </div>
 </footer>
 
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.26/bootstrap-native-v4.min.js" integrity="sha256-GlvYPu8qg3GLj5W5pC8VbjXiw+HhzSyVaWYV27ibTJY=" crossorigin="anonymous"></script>
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/1.2.2/instantpage.min.js" integrity="sha256-WiWEkc8wP9MMhCQvobAnHNJKp48A6tKBq7/+ppEqgy4=" crossorigin="anonymous"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.27/bootstrap-native-v4.min.js" crossorigin="anonymous"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/1.2.2/instantpage.min.js" crossorigin="anonymous"></script>
 <script>
     WebFontConfig = {
         google: {
@@ -48,5 +48,12 @@
         wf.async = true;
         s.parentNode.insertBefore(wf, s);
     })(document);
+
+    const togglers = document.getElementsByClassName('hamburger');
+    for (const toggle of togglers) {
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('is-active');
+        });
+    }
 </script>
 </body>
