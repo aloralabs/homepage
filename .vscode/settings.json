@@ -4,5 +4,10 @@
         "public": true,
         "resources": true,
         "hugo_stats.json": true
+    },
+    "eslint.enable": false,
+    "[scss]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
