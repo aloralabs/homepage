@@ -1,0 +1,5 @@
+.site-footer {
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-sm;
+    }
+}
