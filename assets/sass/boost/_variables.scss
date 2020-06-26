@@ -52,8 +52,8 @@ $box-shadow-lg:         0 1rem 3rem rgba($black, .175);
 
 // Typography
 
-$font-family-serif:         "Neuton", serif;
-$font-family-sans-serif:    "Montserrat", sans-serif;
+$font-family-serif:         "Merriweather", serif;
+$font-family-sans-serif:    "Merriweather Sans", sans-serif;
 $font-family-base:          $font-family-sans-serif;
 
 $font-size-base:            1rem;
@@ -113,14 +113,14 @@ $input-height:              auto;
 
 // Dropdowns
 
-$dropdown-padding-y:                0;
 $dropdown-border-radius:            10px;
 $dropdown-border-color:             $light;
 $dropdown-link-hover-color:         $primary;
 $dropdown-link-hover-bg:            none;
 $dropdown-link-active-color:        $primary;
 $dropdown-link-active-bg:           none;
-$dropdown-item-padding-y:           .75rem;
+$dropdown-item-padding-y:           .5rem;
+$dropdown-divider-margin-y:         0;
 
 // Navbar
 

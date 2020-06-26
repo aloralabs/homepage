@@ -1,0 +1,10 @@
+.nav-docs {
+
+    a {
+        color: $gray-900;
+
+        &.active {
+            font-weight: bold;
+        }
+    }
+}

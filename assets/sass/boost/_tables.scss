@@ -19,11 +19,14 @@
 .pricing-table {
 
     th,td {
-        padding: 1.5rem;
         vertical-align: middle;
 
         &:not(:last-child) {
             border-right: 1px solid $border-color;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 1.5rem;
         }
     }
 }
