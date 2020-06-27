@@ -45,10 +45,10 @@
     <!-- Features -->
     <div class="container services">
         <div class="text-center">
-            <h2>The Process</h2>
+            <h2 id="process">The Process</h2>
             <p class="mb-3">We either work with your budget or help you determine one.</p>
         </div>
-        <div class="row align-items-lg-center py-4 py-lg-5" >
+        <div class="row align-items-lg-center py-4 py-lg-5">
             <div class="col-md-6 mb-4 mb-lg-0 order-last order-md-first">
                 <img src="/svg/2.svg" loading="lazy" class="img-fluid" alt="">
             </div>
@@ -82,8 +82,8 @@
 </div>
 
 <div class="container">
-    <h2 class="text-cente" id="projects">Our Work</h2>
-    <div class="row py-5">
+    <h2 class="text-center" id="projects">Our Work</h2>
+    <div class="row py-4 mb-lg-5">
         {{ range first 6 (where .Site.RegularPages.ByWeight "Type" "project") }}
         {{ $image := .Resources.GetMatch "*feature*" }}
         {{ $image = $image.Fill "688x460 center" }}
