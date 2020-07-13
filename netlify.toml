@@ -3,10 +3,10 @@ publish = "public"
 command = "hugo"
 
 [context.production.environment]
-HUGO_VERSION = "0.69.0"
+HUGO_VERSION = "0.74.0"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.69.0"
+HUGO_VERSION = "0.74.0"
 
 [[redirects]]
 from = "https://aloralabs.netlify.com/*"
