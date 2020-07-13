@@ -16,14 +16,9 @@
     </div>
 </footer>
 
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.27/bootstrap-native-v4.min.js" crossorigin="anonymous"></script>
-<script async src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/1.2.2/instantpage.min.js" crossorigin="anonymous"></script>
-<script>
-    const togglers = document.getElementsByClassName('hamburger');
-    for (const toggle of togglers) {
-        toggle.addEventListener('click', () => {
-            toggle.classList.toggle('is-active');
-        });
-    }
-</script>
+{{ $scripts := resources.Get "js/main.js" }}
+{{ $options := dict "minify" true }}
+{{ $js := $scripts | js.Build $options }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
 </body>
