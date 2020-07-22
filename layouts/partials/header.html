@@ -19,7 +19,7 @@
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Merriweather+Sans&display=swap" rel="stylesheet">
 
-    {{ $sass := resources.Get "sass/alora.scss" }}
+    {{ $sass := resources.Get "styles/alora.scss" }}
     {{ $styles := $sass | resources.ToCSS | resources.PostCSS | minify | fingerprint | resources.PostProcess }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
     <link rel="manifest" href="/manifest.json">
