@@ -6,6 +6,9 @@
     "repository": "github:eberkund/alora",
     "dependencies": {
         "@fullhuman/postcss-purgecss": "^2.1.2",
+        "@openfonts/ibm-plex-sans_all": "^1.44.1",
+        "@openfonts/ibm-plex-sans_latin-ext": "^1.44.1",
+        "@openfonts/merriweather_all": "^1.44.1",
         "autoprefixer": "^9.7.4",
         "autotrack": "^2.4.1",
         "bootstrap": "^4.4.1",

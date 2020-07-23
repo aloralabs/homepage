@@ -22,3 +22,11 @@ quality = 100
 name = "Portfolio"
 url = "/#projects"
 weight = 20
+
+[module]
+[[module.mounts]]
+source = "./node_modules/@openfonts/merriweather_all"
+target = "static/webfont/merriweather"
+[[module.mounts]]
+source = "./node_modules/@openfonts/ibm-plex-sans_all"
+target = "static/webfont/ibm-plex-sans"
