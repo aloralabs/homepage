@@ -8,14 +8,19 @@
         "hugo_stats.json": true,
         "package-lock.json": true
     },
-    "eslint.enable": false,
     "[scss]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+<<<<<<< Updated upstream
     "[javascript]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+=======
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+>>>>>>> Stashed changes
     },
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
