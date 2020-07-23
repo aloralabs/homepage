@@ -12,6 +12,10 @@ button.hamburger {
     outline: none;
 }
 
+// .navbar-toggler.hamburger[aria-expanded="true"] {
+//     @extend .is-active;
+// }
+
 .card-img-top {
     height: 230px;
     object-fit: cover;
