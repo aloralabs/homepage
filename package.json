@@ -5,17 +5,17 @@
     "license": "UNLICENSE",
     "repository": "github:eberkund/alora",
     "dependencies": {
-        "@fullhuman/postcss-purgecss": "^2.1.2",
+        "@fullhuman/postcss-purgecss": "^2.3.0",
+        "@openfonts/catamaran_all": "^1.44.1",
         "@openfonts/ibm-plex-sans_all": "^1.44.1",
         "@openfonts/ibm-plex-sans_latin-ext": "^1.44.1",
-        "@openfonts/merriweather_all": "^1.44.1",
-        "autoprefixer": "^9.7.4",
+        "autoprefixer": "^9.8.5",
         "autotrack": "^2.4.1",
-        "bootstrap": "^4.4.1",
+        "bootstrap": "^4.5.0",
         "bootstrap.native": "^3.0.9",
         "hamburgers": "^1.1.3",
         "instant.page": "^5.1.0",
-        "postcss-cli": "^7.1.0"
+        "postcss-cli": "^7.1.1"
     },
     "devDependencies": {
         "prettier": "^2.0.5"
