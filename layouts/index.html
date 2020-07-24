@@ -89,11 +89,13 @@
         {{ $image = $image.Fill "688x460 center" }}
         <div class="col-lg-4 col-md-6 mb-4">
             <div class="card card-hover h-100">
-                <img class="card-img-top" src="{{ $image.RelPermalink }}" alt="">
+                <img class="card-img-top" src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
                 <div class="card-body d-flex flex-column">
-                    <h5 class="card-title mb-1">{{ .Title }}</h5>
+                    <h5 class="card-title">{{ .Title }}</h5>
                     <p class="card-text flex-grow-1">{{ .Params.description }}</p>
-                    <a href="{{ .RelPermalink }}" class="btn btn-outline-primary align-self-start stretched-link">Read more</a>
+                    <a href="{{ .RelPermalink }}" class="btn btn-outline-primary align-self-start stretched-link">
+                        Case Study >
+                    </a>
                 </div>
             </div>
         </div>
