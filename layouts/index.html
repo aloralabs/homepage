@@ -54,15 +54,13 @@
             </div>
             <div class="col-md-5 offset-md-1">
                 <h5>Product Management</h5>
-                <p>Before diving into development, let's strategize.</p>
-                <p>Build the roadmap, set goals, and prioritize.</p>
+                <p>Before diving into development, let's strategize. Build the roadmap, set goals, and prioritize.</p>
             </div>
         </div>
         <div class="row align-items-lg-center py-4 py-lg-5">
             <div class="col-md-5">
                 <h5>Custom Development</h5>
-                <p>Requirements defined and we're ready to build.</p>
-                <p>Engineered with precision until the vision's fulfilled.</p>
+                <p>Requirements defined and we're ready to build. Engineered with precision until the vision's fulfilled.</p>
             </div>
             <div class="col-md-6 mb-4 mb-lg-0 offset-md-1">
                 <img src="/svg/6.svg" loading="lazy" class="img-fluid" alt="">
@@ -74,15 +72,14 @@
             </div>
             <div class="col-md-5 offset-md-1">
                 <h5>Commercialization & Growth</h5>
-                <p>You may be at your growth stage, or already in market for years.</p>
-                <p>Building for the future will prevent future tears.</p>
+                <p>You may be at your growth stage, or already in market for years. Building for the future will prevent future tears.</p>
             </div>
         </div>
     </div>
 </div>
 
 <div class="container">
-    <h2 class="text-center" id="projects">Our Work</h2>
+    <h2 class="text-center" id="projects">Case Studies</h2>
     <div class="row py-4 mb-lg-5">
         {{ range first 6 (where .Site.RegularPages.ByWeight "Type" "project") }}
         {{ $image := .Resources.GetMatch "*feature*" }}
