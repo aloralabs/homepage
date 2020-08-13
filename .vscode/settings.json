@@ -9,7 +9,6 @@
         "package-lock.json": true
     },
     "[scss]": {
-        "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescript]": {

@@ -22,3 +22,11 @@ quality = 100
 name = "Portfolio"
 url = "/#projects"
 weight = 20
+
+[module]
+[[module.mounts]]
+source = "node_modules/@openfonts"
+target = "static/fonts"
+[[module.mounts]]
+source = "static"
+target = "static"
