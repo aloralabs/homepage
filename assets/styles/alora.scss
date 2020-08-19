@@ -13,6 +13,10 @@ button.hamburger {
     outline: none;
 }
 
+.navbar-brand svg {
+    height: 50px;
+}
+
 // .navbar-toggler.hamburger[aria-expanded="true"] {
 //     @extend .is-active;
 // }
