@@ -1,18 +1,7 @@
 $hamburger-layer-color: #343a40;
 
-$display1-weight: 500;
-$display2-weight: 500;
-$display3-weight: 500;
-$display4-weight: 500;
-$headings-font-weight: 500;
-$lead-font-weight: 300;
-
-$font-weight-base: 300;
-
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
 @import "boost/theme";
-
-
 
 button.hamburger {
     outline: none;
