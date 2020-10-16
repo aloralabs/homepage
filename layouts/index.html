@@ -48,17 +48,15 @@
     <hr class="sep border-primary">
     <div class="row py-4 mb-lg-5">
         {{ range first 6 (where .Site.RegularPages.ByWeight "Type" "project") }}
-        {{ $image := .Resources.GetMatch "*feature*" }}
+        {{ $image := .Resources.GetMatch "feature*" }}
         {{ $image = $image.Fill "688x460 center" }}
         <div class="col-lg-4 col-md-6 mb-4">
             <div class="card card-hover h-100">
                 <img class="card-img-top" src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
                 <div class="card-body d-flex flex-column">
                     <h4 class="card-title">{{ .Title }}</h4>
-                    <p class="card-text flex-grow-1">{{ .Params.description }}</p>
-                    <a href="{{ .RelPermalink }}" class="small align-self-start stretched-link">
-                        Case Study >
-                    </a>
+                    <div class="card-text flex-grow-1">{{ .Params.description }}</div>
+                    <a href="{{ .RelPermalink }}" class="stretched-link"></a>
                 </div>
             </div>
         </div>
