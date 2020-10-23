@@ -50,14 +50,35 @@ html {
     width: 1em;
 }
 
-#process {
-    margin-top: 5rem;
-}
-
 .btn {
     text-transform: none;
 }
 
 .navbar-nav .nav-link {
     text-transform: none;
+}
+
+.timeline {
+    background: url('https://www.gramercyparkhotel.com/assets/history/timeline-088711094b3cebd369d28d1a097a2e49.png') center top repeat-y;
+    width: 42px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -21px;
+}
+
+.grid {
+    display: grid;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg-skew {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.bg-skew::before {
+    transform: skewY(-5deg);
+    transform-origin: center center;
 }
