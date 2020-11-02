@@ -15,7 +15,7 @@
 
 <div class="bg-skew bg-skew-light mb-5">
     <h2 class="text-center">Services</h2>
-    <hr class="sep border-primary">
+    <hr class="sep border-primary mb-5">
     <div class="container">
         <div class="row">
             <div class="col-md-4 mb-4">
@@ -87,8 +87,8 @@
 
 <div class="container">
     <h2 class="text-center" id="projects">Case Studies</h2>
-    <hr class="sep border-primary">
-    <div class="row py-4 mb-lg-5">
+    <hr class="sep border-primary mb-5">
+    <div class="row mb-lg-5">
         {{ range first 6 (where .Site.RegularPages.ByWeight "Type" "project") }}
         {{ $image := .Resources.GetMatch "feature*" }}
         {{ $image = $image.Fill "688x460 center" }}
