@@ -3,6 +3,7 @@
         "**/node_modules": true,
         "public": true,
         "resources": true,
+        "hugo_stats.json": true
     },
     "search.exclude": {
         "hugo_stats.json": true,
@@ -13,9 +14,6 @@
     },
     "[typescript]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
