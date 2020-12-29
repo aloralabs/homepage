@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <div class="container">
-    <h1 class="display-2 my-5 my-lg-6 text-center">{{ .Title }}</h1>
+    <h1 class="py-5 text-center">{{ .Title }}</h1>
 </div>
 
 <div class="bg-skew bg-skew-light">
@@ -18,7 +18,7 @@
                         <span class="h5 d-block mb-2">
                             Company
                         </span>
-                        <p class="small text-secondary text-uppercase">
+                        <p class="small text-secondary">
                             <a href="{{ .Params.client_website }}" target="_blank">
                                 {{ .Params.client }}
                             </a>
@@ -28,7 +28,7 @@
                         <span class="h5 d-block mb-2">
                             Industry
                         </span>
-                        <p class="small text-secondary text-uppercase">
+                        <p class="small text-secondary">
                             {{ .Params.industry }}
                         </p>
                     </div>
@@ -36,7 +36,7 @@
                         <span class="h5 d-block mb-2">
                             Service
                         </span>
-                        <p class="small text-secondary text-uppercase">
+                        <p class="small text-secondary">
                             {{ .Params.service }}
                         </p>
                     </div>
@@ -44,7 +44,7 @@
                         <span class="h5 d-block mb-2">
                             Technologies
                         </span>
-                        <p class="small text-secondary text-uppercase">
+                        <p class="small text-secondary">
                             {{ .Params.technologies }}
                         </p>
                     </div>
@@ -57,13 +57,35 @@
         {{ .Content }}
 
         <!-- Call to action -->
-        <hr class="sep border-primary my-5">
+        <!--<hr class="sep border-primary my-5">-->
         <div class="container pb-4">
             <div class="text-center">
-                <h2 class="mb-4">Interested in learning more?</h2>
+                <h2 class="mb-4">{{ .Params.cta_heading | default "Interested in learning more?" }}</h2>
                 <div class="mb-4">
                     <a class="btn btn-primary" href="/contact" role="button">Contact Us Today</a>
                 </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 class="text-center" id="projects">Explore More Case Studies</h2>
+            <hr class="sep border-primary mb-5">
+            <div class="row mb-lg-5">
+            {{ $projects := where .Site.Pages "Type" "project" }}
+            {{ range first 3 (where $projects ".File.UniqueID" "!=" $.Page.File.UniqueID) }}
+            {{ $image := .Resources.GetMatch "feature*" }}
+            {{ $image = $image.Fill "688x460 center" }}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card card-hover h-100">
+                    <img class="card-img-top" src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+                    <div class="card-body d-flex flex-column">
+                    <h4 class="card-title">{{ .Title }}</h4>
+                    <div class="card-text flex-grow-1">{{ .Params.description }}</div>
+                    <a href="{{ .RelPermalink }}" class="stretched-link"><br>Read Case Study ></a>
+                </div>
+                    </div>
+                </div>
+                {{ end }}
             </div>
         </div>
 
