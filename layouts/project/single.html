@@ -72,7 +72,7 @@
             <hr class="sep border-primary mb-5">
             <div class="row mb-lg-5">
             {{ $projects := where .Site.Pages "Type" "project" }}
-            {{ range first 3 (where $projects ".File.UniqueID" "!=" "$.Page.File.UniqueID") }}
+            {{ range first 3 (where $projects ".File.UniqueID" "!=" $.Page.File.UniqueID) }}
             {{ $image := .Resources.GetMatch "feature*" }}
             {{ $image = $image.Fill "688x460 center" }}
             <div class="col-lg-4 col-md-6 mb-4">
@@ -80,6 +80,8 @@
                     <img class="card-img-top" src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
                     <div class="card-body d-flex flex-column">
                     <h4 class="card-title">{{ .Title }}</h4>
+                    <p>'{{.File.UniqueID}}'</p>
+                    <p>'{{$.Page.File.UniqueID}}'</p>
                     <div class="card-text flex-grow-1">{{ .Params.description }}</div>
                     <a href="{{ .RelPermalink }}" class="stretched-link"></a>
                 </div>
