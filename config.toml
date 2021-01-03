@@ -24,13 +24,8 @@ url = "/#projects"
 weight = 20
 
 [[menu.main]]
-name = "Industries"
-weight = 30
-
-[[menu.main]]
 name = "IoT"
-url = "/industries/iot"
-parent = "Industries"
+url = "/insights/how-to-develop-your-iot-product"
 weight = 30
 
 [module]
