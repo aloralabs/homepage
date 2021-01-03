@@ -23,6 +23,11 @@ name = "Portfolio"
 url = "/#projects"
 weight = 20
 
+[[menu.main]]
+name = "IoT"
+url = "/insights/how-to-develop-your-iot-product"
+weight = 30
+
 [module]
 [[module.mounts]]
 source = "node_modules/@openfonts"
