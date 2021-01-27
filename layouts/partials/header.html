@@ -5,6 +5,7 @@
     {{ hugo.Generator }}
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.Description }}{{ end }}">
+    <meta name="image" property="og:image" content="/project/mero-comfort/feature.jpg">
 
     <title>{{ .Title }}</title>
     {{ template "_internal/opengraph.html" . }}
