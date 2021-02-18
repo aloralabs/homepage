@@ -59,7 +59,8 @@ html {
 }
 
 .timeline {
-    background: url('https://www.gramercyparkhotel.com/assets/history/timeline-088711094b3cebd369d28d1a097a2e49.png') center top repeat-y;
+    background: url("https://www.gramercyparkhotel.com/assets/history/timeline-088711094b3cebd369d28d1a097a2e49.png")
+        center top repeat-y;
     width: 42px;
     height: 100%;
     position: absolute;
@@ -83,6 +84,6 @@ html {
     transform-origin: center center;
 }
 
-.clutch-awards{
+.clutch-awards {
     max-width: 160px;
 }
