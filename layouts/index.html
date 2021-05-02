@@ -6,7 +6,7 @@
         <div class="col-lg-10 text-center pb-4">
             <h1 class="m-0">Transform Your Technology</h1>
             <p class="px-sm-5 pt-3">
-                We develop custom hardware and software products that elevate  businesses.
+                We develop custom hardware and software products that elevate businesses.
             </p>
             <!--<a class="btn btn-primary" href="#process">Learn More</a>-->
         </div>
@@ -91,7 +91,7 @@
     <div class="row mb-lg-5">
         {{ range first 6 (where .Site.RegularPages.ByWeight "Type" "project") }}
         {{ $image := .Resources.GetMatch "feature*" }}
-        {{ $image = $image.Fill "688x460 center" }}
+        {{ $image = $image.Fill "688x460 center webp" }}
         <div class="col-lg-4 col-md-6 mb-4">
             <div class="card card-hover h-100">
                 <img class="card-img-top" src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
