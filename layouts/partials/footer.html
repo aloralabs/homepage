@@ -13,7 +13,7 @@
 </footer>
 
 {{ $scripts := resources.Get "scripts/main.ts" }}
-{{ $options := dict "minify" false }}
+{{ $options := dict "minify" true }}
 {{ $js := $scripts | js.Build $options }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
