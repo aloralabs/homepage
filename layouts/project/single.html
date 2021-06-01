@@ -74,7 +74,7 @@
                 {{ $projects := where .Site.Pages "Type" "project" }}
                 {{ range first 3 (where $projects ".File.UniqueID" "!=" $.Page.File.UniqueID) }}
                 {{ $image := .Resources.GetMatch "feature*" }}
-                {{ $image = $image.Fill "688x460 center" }}
+                {{ $image = $image.Fill "688x460 center webp" }}
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card card-hover h-100">
                         <img class="card-img-top" src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
