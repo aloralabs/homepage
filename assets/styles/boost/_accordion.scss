@@ -1,35 +1,24 @@
-.accordion {
+.accordion-button {
+  &:hover {
+    background-color: tint-color($primary, 90%);
+    color: $primary;
+  }
 
-    .card {
+  &:focus {
+    box-shadow: none;
+    outline: auto;
+  }
 
-        .card-header {
-            background-color: $white;
-            border: 0;
-            border-radius: $border-radius-lg !important;
-            padding: 1.5rem;
+  &::after {
+    content: none;
+  }
 
-            a {
-                display: block;
+  i {
+    margin-left: auto;
+    transition: transform .2s ease-in-out;
+  }
 
-                .rotate-icon {
-                    line-height: 1.25;
-                    transition: transform 0.2s ease-in-out;
-                }
-
-                &:not(.collapsed) .rotate-icon {
-                    transform: rotate(180deg);
-                }
-            }
-
-            .card-title {
-                color: theme-color("dark");
-                font-size: 1.25rem;
-                margin-bottom: 0;
-            }
-        }
-
-        .card-body {
-            padding: 0 1.5rem 1rem;
-        }
-    }
+  &:not(.collapsed) i {
+    transform: rotate(180deg);
+  }
 }

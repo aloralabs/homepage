@@ -52,12 +52,12 @@
             </div>
         </div>
 
-        <hr class="sep border-primary mt-4 mb-5">
+        <div class="divider mx-auto mt-4 mb-5"></div>
 
         {{ .Content }}
 
         <!-- Call to action -->
-        <!--<hr class="sep border-primary my-5">-->
+        <!--<div class="divider mx-auto my-5"></div>-->
         <div class="container pb-4">
             <div class="text-center">
                 <h2 class="mb-4">{{ .Params.cta_heading | default "Interested in learning more?" }}</h2>
@@ -69,26 +69,26 @@
         <br>
         <div class="container">
             <h2 class="text-center" id="projects">Explore More Case Studies</h2>
-            <hr class="sep border-primary mb-5">
+            <div class="divider mx-auto mb-5"></div>
             <div class="row mb-lg-5">
-            {{ $projects := where .Site.Pages "Type" "project" }}
-            {{ range first 3 (where $projects ".File.UniqueID" "!=" $.Page.File.UniqueID) }}
-            {{ $image := .Resources.GetMatch "feature*" }}
-            {{ $image = $image.Fill "688x460 center" }}
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card card-hover h-100">
-                    <img class="card-img-top" src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
-                    <div class="card-body d-flex flex-column">
-                    <h4 class="card-title">{{ .Title }}</h4>
-                    <div class="card-text flex-grow-1">{{ .Params.description }}</div>
-                    <a href="{{ .RelPermalink }}" class="stretched-link"><br>Case Study ></a>
-                </div>
+                {{ $projects := where .Site.Pages "Type" "project" }}
+                {{ range first 3 (where $projects ".File.UniqueID" "!=" $.Page.File.UniqueID) }}
+                {{ $image := .Resources.GetMatch "feature*" }}
+                {{ $image = $image.Fill "688x460 center" }}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-hover h-100">
+                        <img class="card-img-top" src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">{{ .Title }}</h4>
+                            <div class="card-text flex-grow-1">{{ .Params.description }}</div>
+                            <a href="{{ .RelPermalink }}" class="stretched-link"><br>Case Study ></a>
+                        </div>
                     </div>
                 </div>
                 {{ end }}
             </div>
             <div class="text-center">
-                <hr class="sep border-primary">
+                <div class="divider mx-auto"></div>
                 <p>💡 Check out our guide - <a href="/insights/how-to-develop-your-iot-product/">How To Develop Your IoT Product</a></p>
                 <p>🏆 Latest blog post - <a href="/insights/alora-labs-receives-clutch-2021-top-iot-agency-award/">Alora Labs wins Top IoT Company Award</a></p>
             </div>

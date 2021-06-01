@@ -1,7 +1,8 @@
 $hamburger-layer-color: #343a40;
 
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
-@import "boost/theme";
+// @import "boost/theme";
+@import "boost2/style.scss";
 
 button.hamburger {
     outline: none;
@@ -26,7 +27,7 @@ button.hamburger {
 }
 
 .navbar {
-    font-size: $font-size-base;
+    // font-size: $font-size-base;
 }
 
 html {

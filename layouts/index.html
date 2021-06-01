@@ -6,7 +6,7 @@
         <div class="col-lg-10 text-center pb-4">
             <h1 class="m-0">Transform Your Technology</h1>
             <p class="px-sm-5 pt-3">
-                We develop custom hardware and software products that elevate  businesses.
+                We develop custom hardware and software products that elevate businesses.
             </p>
             <!--<a class="btn btn-primary" href="#process">Learn More</a>-->
         </div>
@@ -15,7 +15,7 @@
 
 <div class="bg-skew bg-skew-light mb-5">
     <h2 class="text-center">Services</h2>
-    <hr class="sep border-primary mb-5">
+    <div class="divider mx-auto mb-5"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-4 mb-4">
@@ -87,7 +87,7 @@
 
 <div class="container">
     <h2 class="text-center" id="projects">Case Studies</h2>
-    <hr class="sep border-primary mb-5">
+    <div class="divider mx-auto mb-5"></div>
     <div class="row mb-lg-5">
         {{ range first 6 (where .Site.RegularPages.ByWeight "Type" "project") }}
         {{ $image := .Resources.GetMatch "feature*" }}
@@ -118,7 +118,7 @@
 
 <div class="container">
     <div class="text-center">
-        <hr class="sep border-primary">
+        <div class="divider mx-auto"></div>
         <p>
             🏆 Latest blog post - <a href="/insights/alora-labs-receives-clutch-2021-top-iot-agency-award/">Alora Labs wins Top IoT Company Award</a>
         </p>
@@ -140,7 +140,7 @@
 
 <div class="container">
     <div class="text-center">
-        <hr class="sep border-primary">
+        <div class="divider mx-auto"></div>
         <p>
             💡 Check out our guide - <a href="/insights/how-to-develop-your-iot-product/">How To Develop Your IoT Product</a>
         </p>

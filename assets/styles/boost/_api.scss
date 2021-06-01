@@ -1,0 +1,29 @@
+$custom-colors: (
+  "black": $black,
+ );
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$utilities: (
+  "opacity": (
+    property: opacity,
+    values: (
+      0: 0,
+      25: .25,
+      50: .5,
+      75: .75,
+      100: 1,
+    )
+  ),
+  "z-index": (
+    property: z-index,
+    class: z,
+    values: (
+      0:  0,
+      10: 10,
+      20: 20,
+      30: 30,
+      auto: auto,
+    )
+  )
+ );

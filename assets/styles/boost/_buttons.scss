@@ -1,18 +1,8 @@
 .btn {
-    font-size: $font-size-sm;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 
-    &:hover,
-    .btn-group & {
-        box-shadow: none;
-    }
-}
-
-.btn-sm {
-    font-size: 0.75rem;
-}
-
-.btn-lg {
-    font-size: 1rem;
+  &:hover {
+    box-shadow: none;
+  }
 }
