@@ -3,6 +3,10 @@ $hamburger-layer-color: #343a40;
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
 @import "boost/theme";
 
+body {
+    touch-action: pan-x pan-y;
+}
+
 button.hamburger {
     outline: none;
 }
