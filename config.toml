@@ -2,7 +2,6 @@ baseURL = "https://aloralabs.com/"
 languageCode = "en-us"
 title = "Alora Labs"
 
-googleAnalytics = "UA-126455348-1"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "section", "taxonomyTerm"]
 enableGitInfo = true
