@@ -13,6 +13,11 @@ from = "https://aloralabs.netlify.com/*"
 to = "https://aloralabs.com/:splat"
 force = true
 
+[[redirects]]
+from = "https://aloralab.com/*"
+to = "https://aloralabs.com/:splat"
+force = true
+
 [[headers]]
 for = "*"
 [headers.values]
