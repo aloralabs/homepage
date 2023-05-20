@@ -3,10 +3,10 @@ publish = "public"
 command = "hugo --minify"
 
 [context.production.environment]
-HUGO_VERSION = "0.83.0"
+HUGO_VERSION = "0.111.3"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.83.0"
+HUGO_VERSION = "0.111.3"
 
 [[redirects]]
 from = "https://aloralabs.netlify.com/*"
