@@ -3,14 +3,6 @@ title: Senior Frontend Developer
 location: Toronto, Canada
 ---
 
-Job Title: Senior Frontend Engineer (React)
-
-Company: Alora Labs
-
-Location: [City, State]
-
-Job Type: Full-time
-
 Are you a talented and experienced frontend engineer with expertise in React? Are you passionate about creating exceptional user experiences and driving frontend development? If so, we have an exciting opportunity for you to join our team as a Senior Frontend Engineer at Alora Labs.
 
 ### About Alora Labs
