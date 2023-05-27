@@ -31,19 +31,20 @@ Excellent troubleshooting and problem-solving abilities.
 Familiarity with network protocols and security considerations for large scale systems.
 Comfortable working in an agile, team-oriented environment.
 Strong communication and collaboration skills.
-Nice to Haves:
+
+### Nice to Haves
 
 Certifications in cloud platforms such as AWS Certified DevOps Engineer, Google Professional DevOps Engineer, etc.
 Experience with serverless architecture.
 
 ### What We Offer
 
-Competitive salary and benefits package.
-Opportunity to work with a diverse, talented team of professionals.
-Flexible work hours and remote work options.
-Continuous learning and development opportunities.
-A culture that values collaboration, innovation, and inclusion.
-XYZ Technologies is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.
+- Competitive salary and benefits package.
+- Opportunity to work with a diverse, talented team of professionals.
+- Flexible work hours and remote work options.
+- Continuous learning and development opportunities.
+- A culture that values collaboration, innovation, and inclusion.
+- Alora Labs is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.
 
 Interested candidates are invited to submit their resume and cover letter via our online application platform.
 
