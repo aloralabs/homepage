@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Alora Labs"
 
 enableRobotsTXT = true
-disableKinds = ["taxonomy", "section", "taxonomyTerm"]
+disableKinds = ["taxonomy", "taxonomyTerm"]
 enableGitInfo = true
 inlineImports = true
 
