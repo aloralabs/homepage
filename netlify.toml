@@ -1,12 +1,12 @@
 [build]
 publish = "public"
-command = "hugo"
+command = "hugo --minify"
 
 [context.production.environment]
-HUGO_VERSION = "0.83.0"
+HUGO_VERSION = "0.111.3"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.83.0"
+HUGO_VERSION = "0.111.3"
 
 [[redirects]]
 from = "https://aloralabs.netlify.com/*"
@@ -14,7 +14,7 @@ to = "https://aloralabs.com/:splat"
 force = true
 
 [[redirects]]
-from = "https://aloraengineering.com/*"
+from = "https://aloralab.com/*"
 to = "https://aloralabs.com/:splat"
 force = true
 
