@@ -72,7 +72,7 @@
             <div class="divider mx-auto mb-5"></div>
             <div class="row mb-lg-5">
                 {{ $projects := where .Site.Pages "Type" "project" }}
-                {{ range first 3 (where $projects ".File.UniqueID" "!=" $.Page.File.UniqueID) }}
+                {{ range first 3 (where $projects "." "ne" $.Page) }}
                 {{ $image := .Resources.GetMatch "feature*" }}
                 {{ $image = $image.Fill "688x460 center webp" }}
                 <div class="col-lg-4 col-md-6 mb-4">
