@@ -1,0 +1,25 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "min-viewport-height": map-merge(
+      map-get($utilities, "min-viewport-height"),
+        (
+          values: map-merge(
+          map-get(map-get($utilities, "min-viewport-height"), "values"),
+          (75: 75vh),
+        ),
+      ),
+    ),
+    "z-index": (
+      property: z-index,
+      class: z,
+      values: (
+        0: 0,
+        10: 10,
+        20: 20,
+        30: 30,
+        auto: auto,
+      ),
+    ),
+  )
+);

@@ -1,44 +1,18 @@
 .card {
-    border: 0;
-    box-shadow: $box-shadow-sm;
-    transition: all 0.2s ease-in-out;
+  box-shadow: $box-shadow;
+  transition: all 0.2s ease-in-out;
 }
 
 .card-hover:hover {
-    box-shadow: $box-shadow;
-    transform: translateY(-3px);
-}
-
-.card-img-top {
-    min-height: 1px; // IE11 workaround
+  box-shadow: $box-shadow-lg;
+  transform: translateY(-3px);
 }
 
 .card-title a {
-    color: $gray-900;
+  color: $gray-900;
 
-    &:hover,
-    &:focus {
-        color: theme-color("primary");
-    }
-}
-
-.card-price {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    text-align: center;
-
-    .card-header {
-        background-color: transparent;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-
-    .card-body {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-}
-
-.card-featured {
-    border: 4px solid theme-color("primary");
+  &:hover,
+  &:focus {
+    color: $primary;
+  }
 }

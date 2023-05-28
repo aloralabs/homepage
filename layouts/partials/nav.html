@@ -1,4 +1,4 @@
-<header class="site-header container">
+<header>
     <a href="#content" class="sr-only sr-only-focusable">Skip to content</a>
     <nav class="navbar navbar-expand-lg navbar-light py-3" aria-label="Main navigation">
         <div class="container">
@@ -11,7 +11,7 @@
                 </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav align-items-lg-center pt-3 pt-lg-0 ml-auto">
+                <ul class="navbar-nav align-items-lg-center pt-3 pt-lg-0 ms-auto">
                     {{ range .Site.Menus.main }}
                     {{ if .HasChildren }}
                     <li class="nav-item dropdown">
