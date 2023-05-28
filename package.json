@@ -5,10 +5,12 @@
     "license": "UNLICENSE",
     "repository": "github:eberkund/alora",
     "dependencies": {
+        "@analytics/google-tag-manager": "^0.5.4",
         "@fullhuman/postcss-purgecss": "^2.3.0",
         "@openfonts/catamaran_all": "^1.44.1",
         "@openfonts/ibm-plex-sans_all": "^1.44.1",
         "@openfonts/ibm-plex-sans_latin-ext": "^1.44.1",
+        "analytics": "^0.8.7",
         "autoprefixer": "^9.8.5",
         "autotrack": "^2.4.1",
         "bootstrap": "^5.2.3",
