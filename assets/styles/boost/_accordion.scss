@@ -4,11 +4,6 @@
     color: $primary;
   }
 
-  &:focus {
-    box-shadow: none;
-    outline: auto;
-  }
-
   &::after {
     content: none;
   }
