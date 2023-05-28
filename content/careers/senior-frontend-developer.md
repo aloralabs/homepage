@@ -6,7 +6,7 @@ location: Toronto, Canada
 Are you a talented and experienced frontend engineer with expertise in React? Are you passionate about creating exceptional user experiences and driving frontend development? If so, we have an exciting opportunity for you to join our team as a Senior Frontend Engineer at Alora Labs.
 
 ### About Alora Labs
-Alora Labs is a leading technology company specializing in [briefly describe the company's products/services and mission]. We are committed to innovation, quality, and delivering outstanding solutions to our clients. As a Senior Frontend Engineer, you will play a crucial role in shaping the future of our products, with a focus on React development.
+Alora Labs is a leading technology company specializing in IoT and custom software development. We are committed to innovation, quality, and delivering outstanding solutions to our clients. As a Senior Frontend Engineer, you will play a crucial role in shaping the future of our products, with a focus on React development.
 
 ### Responsibilities
 
@@ -20,17 +20,17 @@ Write clean, efficient, and reusable code using HTML, CSS, and JavaScript, speci
 
 ### Requirements
 
-Bachelor's degree in Computer Science, Engineering, or a related field (or equivalent experience).
-Proven track record of at least [X] years working as a frontend engineer, with a strong focus on web application development using React.
-Expertise in React, including experience with React hooks, context API, and popular libraries and tools within the React ecosystem.
-Strong proficiency in HTML, CSS, and JavaScript, and understanding of modern frontend development principles.
-Experience with responsive and mobile-first design using React.
-Familiarity with RESTful APIs and integrating frontend applications with backend services using React.
-Proficient understanding of version control systems, such as Git.
-Excellent problem-solving and debugging skills.
-Ability to effectively communicate technical concepts to non-technical stakeholders.
-Strong organizational and time management skills, with the ability to prioritize tasks effectively.
-Experience with unit testing frameworks and writing testable code is a plus.
+- Bachelor's degree in Computer Science, Engineering, or a related field (or equivalent experience).
+- Proven track record of at least 3 years working as a frontend engineer, with a strong focus on web application development using React.
+- Expertise in React, including experience with React hooks, context API, and popular libraries and tools within the React ecosystem.
+- Strong proficiency in HTML, CSS, and JavaScript, and understanding of modern frontend development principles.
+- Experience with responsive and mobile-first design using React.
+- Familiarity with RESTful APIs and integrating frontend applications with backend services using React.
+- Proficient understanding of version control systems, such as Git.
+- Excellent problem-solving and debugging skills.
+- Ability to effectively communicate technical concepts to non-technical stakeholders.
+- Strong organizational and time management skills, with the ability to prioritize tasks effectively.
+- Experience with unit testing frameworks and writing testable code is a plus.
 
 ### Benefits
 
