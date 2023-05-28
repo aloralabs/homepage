@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<div class="container">
+    <div class="row justify-content-lg-center">
+        <div class="col-lg-9">
+            <div class="mb-3">
+                <h2 class="mb-0">{{ .Title }}</h2>
+                {{.Params.location}}
+            </div>
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+
+
+{{ end }}
