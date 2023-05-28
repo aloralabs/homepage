@@ -9,7 +9,6 @@
         "hugo_stats.json": true,
         "package-lock.json": true
     },
-    "editor.formatOnSave": true,
     "[scss]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -19,5 +18,4 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "html.format.wrapAttributes": "preserve-aligned"
 }
