@@ -1,5 +1,53 @@
-@import "utilities/backgrounds";
-@import "utilities/borders";
-@import "utilities/opacity";
-@import "utilities/sizing";
-@import "utilities/text";
+// Backgrounds
+
+.bg-cover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-skew {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+    z-index: -1;
+  }
+
+  @each $color, $value in $theme-colors {
+    &-#{$color}::before {
+      background-color: $value;
+    }
+  }
+}
+
+// Borders
+
+.divider {
+  border-bottom: 2px solid $primary;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 3rem;
+}
+
+// Text
+
+.font-serif {
+  font-family: $font-family-serif;
+}

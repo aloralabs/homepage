@@ -1,10 +1,21 @@
-.nav-docs {
+.side-nav {
+  top: 1rem;
 
-    a {
-        color: $gray-900;
+  a {
+    color: $gray-700;
+    text-decoration: none;
 
-        &.active {
-            font-weight: bold;
-        }
+    &:hover {
+      color: $black;
     }
+
+    &.active::after {
+      content: "\f30b";
+      color: $primary;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      margin-left: .5rem;
+      vertical-align: middle;
+    }
+  }
 }

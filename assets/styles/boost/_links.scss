@@ -1,21 +1,14 @@
 a {
-    transition: color 0.2s ease-in-out;
-
-    p &,
-    p &:hover {
-        text-decoration: underline;
-    }
+  transition: color 0.2s ease-in-out;
 }
 
 .link-cta {
-    border-bottom: 2px solid theme-color("primary");
-    color: theme-color("dark");
-    font-size: $font-size-sm;
-    letter-spacing: 1px;
-    padding-bottom: 2px;
-    text-transform: uppercase;
-
-    &:hover {
-        color: theme-color("primary");
-    }
+  border-bottom: 2px solid $primary;
+  color: $dark;
+  display: inline-block;
+  font-size: $font-size-sm;
+  letter-spacing: 1px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
