@@ -1,17 +1,17 @@
 .pagination {
+  line-height: 1;
 
-    .page-item {
-        margin-left: 0.25rem;
-        margin-right: 0.25rem;
+  .page-item {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
 
-        &:first-child .page-link,
-        &:last-child .page-link {
-            border-radius: 10rem;
-        }
+    &:first-child .page-link,
+    &:last-child .page-link {
+      border-radius: 10rem;
     }
+  }
 
-    .page-link {
-        border-radius: 50%;
-        transition: background-color 0.2s ease-in-out;
-    }
+  .page-link {
+    border-radius: 50%;
+  }
 }

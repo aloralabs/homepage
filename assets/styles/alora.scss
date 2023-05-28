@@ -1,7 +1,7 @@
 $hamburger-layer-color: #343a40;
 
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
-@import "boost/theme";
+@import "boost/style.scss";
 
 body {
     touch-action: pan-x pan-y;
@@ -30,7 +30,7 @@ button.hamburger {
 }
 
 .navbar {
-    font-size: $font-size-base;
+    // font-size: $font-size-base;
 }
 
 html {
