@@ -1,5 +1,6 @@
 ---
 title: Senior Infrastructure Engineer
+description: Alora Labs, a leading IoT development company is seeking a Senior Infrastructure Engineer to join the team.
 location: Toronto, Canada
 ---
 
