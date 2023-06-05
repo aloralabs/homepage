@@ -15,19 +15,19 @@ menu:
             <div class="col-lg-9">
                 <p>Thanks for your interest in working with us. Please share any relevant information about your project and we'll be sure to get back to you shortly.</p>
                 <form name="contact" method="POST" netlify>
-                    <div class="form-group">
+                    <div class="mb-3">
                         <label for="inputName" class="small text-uppercase">Name <span class="text-primary">*</span></label>
                         <input name="name" type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
                     </div>
-                    <div class="form-group">
+                    <div class="mb-3">
                         <label for="inputEmail" class="small text-uppercase">Email <span class="text-primary">*</span></label>
                         <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Enter your email address" required>
                     </div>
-                    <div class="form-group">
+                    <div class="mb-3">
                         <label for="messageTetxarea" class="small text-uppercase">Message <span class="text-primary">*</span></label>
                         <textarea name="message" class="form-control rounded" id="messageTetxarea" rows="9" placeholder="What would you like to discuss?" required></textarea>
                     </div>
-                    <div class="form-group">
+                    <div class="mb-3">
                         <div netlify-recaptcha></div>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
