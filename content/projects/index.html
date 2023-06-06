@@ -1,0 +1,49 @@
+---
+title: Projects
+description: End-to-end custom IoT product strategy and development services that empower businesses to disrupt their industries. 
+menu:
+  main:
+    weight: 60
+---
+
+<div class="container">
+    <h1 class="py-5 text-center">Project</h1>
+</div>
+
+<div class="bg-skew bg-skew-light mb-5">
+    <div class="container">
+        <div class="row justify-content-lg-center">
+            <div class="col-lg-9">
+                <p>End-to-end custom development services that empower businesses to disrupt their industries. From IoT companies to SaaS, just great people, no sass.</p>
+                <!--<p>End-to-end custom development services that empower businesses to transform ideas into reality. </p>-->
+                <!--<p class="m-0">We help companies disrupt their respective industries, by providing Product Management leadership, along with supporting the teams by developing Hardware and Software.</p>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="text-center" id="projects">Case Studies</h2>
+    <div class="divider mx-auto mb-5"></div>
+    <div class="row mb-lg-5">
+        {{ range first 6 (where .Site.RegularPages.ByWeight "Type" "project") }}
+        {{ $image := .Resources.GetMatch "feature*" }}
+        {{ $image = $image.Fill "688x460 center webp" }}
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card card-hover h-100">
+                <img class="card-img-top" src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+                <div class="card-body d-flex flex-column">
+                    <h4 class="card-title">{{ .Title }}</h4>
+                    <div class="card-text flex-grow-1">{{ .Params.description }}</div>
+                    <a href="{{ .RelPermalink }}" class="small stretched-link text-decoration-none"><br>Case Study ></a>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+<div class="text-center">
+    <div class="divider mx-auto"></div>
+    <p>💡 Check out our guide - <a href="/insights/how-to-develop-your-iot-product/">How To Develop Your IoT Product</a></p>
+</div>
