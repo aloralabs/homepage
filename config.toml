@@ -19,7 +19,7 @@ quality = 100
 
 [[menu.main]]
 name = "Portfolio"
-url = "/#projects"
+url = "/projects"
 weight = 20
 
 [[menu.main]]
