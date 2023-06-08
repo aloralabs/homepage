@@ -69,7 +69,7 @@
             <h2 class="text-center" id="projects">Explore More Case Studies</h2>
             <div class="divider mx-auto mb-5"></div>
             <div class="row mb-lg-5">
-                {{ $projects := where .Site.Pages "Type" "project" }}
+                {{ $projects := where .Site.Pages "Type" "projects" }}
                 {{ range first 3 (where $projects "." "ne" $.Page) }}
                 {{ $image := .Resources.GetMatch "feature*" }}
                 {{ $image = $image.Fill "688x460 center webp" }}
