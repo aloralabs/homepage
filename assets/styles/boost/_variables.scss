@@ -17,7 +17,6 @@ $black: #000;
 
 $enable-caret: false;
 $enable-shadows: true;
-$enable-negative-margins: true;
 
 // Spacing
 
@@ -79,13 +78,11 @@ $box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
 
 $accordion-padding-y: 1.5rem;
 $accordion-padding-x: 1.25rem;
-$accordion-border-width: 0;
+$accordion-border-color: inherit;
 
 // Alerts
 
 $alert-border-width: 0;
-$alert-bg-scale: 0;
-$alert-color-scale: 0;
 
 // Buttons + Forms
 
@@ -109,7 +106,7 @@ $input-btn-border-width: 2px;
 
 $btn-box-shadow: 0 7px 16px 0 rgba($black, 0.2);
 $btn-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
-border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out !default;
+border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
 // Cards
 
@@ -117,7 +114,6 @@ $card-spacer-y: 1.25rem;
 $card-spacer-x: 1.25rem;
 $card-border-width: 0;
 $card-border-radius: $border-radius-lg;
-$card-cap-bg: $white;
 
 // Code
 
@@ -126,6 +122,7 @@ $code-color: #db1a74;
 
 // Dropdowns
 
+$dropdown-font-size: 0.875rem;
 $dropdown-border-radius: 0.5rem;
 $dropdown-border-color: $light;
 $dropdown-divider-bg: rgba($black, 0.1);
@@ -158,13 +155,13 @@ $modal-backdrop-opacity: 0.65;
 
 // Navbar
 
-$navbar-light-brand-color: $dark;
+$navbar-toggler-padding-x: 0.25rem;
+$navbar-toggler-focus-width: 0;
 $navbar-light-color: $dark;
 $navbar-light-hover-color: $primary;
 $navbar-light-active-color: $primary;
-$navbar-toggler-padding-x: 0.5rem;
 $navbar-light-toggler-border-color: transparent;
-$navbar-toggler-focus-width: 0;
+
 
 // Pagination
 
@@ -184,8 +181,5 @@ $table-cell-padding-y: 0.75rem;
 $table-cell-padding-x: 0.75rem;
 $table-cell-padding-y-sm: 0.5rem;
 $table-cell-padding-x-sm: 0.5rem;
-$table-th-font-weight: normal;
-$table-group-separator-color: inherit;
-$table-border-factor: 0.3;
 $table-bg-scale: 10%;
 $table-striped-bg-factor: 0.075;

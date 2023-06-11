@@ -29,10 +29,6 @@ button.hamburger {
     font-family: "font awesome 5 pro";
 }
 
-.navbar {
-    // font-size: $font-size-base;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -95,4 +91,14 @@ html {
 .hero-awards {
     max-width: 120px;
     margin-top: 24px;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: .125em;
+}
+
+a:hover {
+    text-decoration-style: solid
 }
