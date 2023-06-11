@@ -11,4 +11,8 @@ a {
   padding-bottom: 2px;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    color: $primary;
+  }
 }

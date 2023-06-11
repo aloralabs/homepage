@@ -2,12 +2,10 @@
   line-height: 1;
 
   .page-item {
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
 
     &:first-child .page-link,
     &:last-child .page-link {
-      border-radius: 10rem;
+      border-radius: $border-radius-pill;
     }
   }
 
