@@ -1,6 +1,6 @@
 .accordion-button {
   &:hover {
-    background-color: tint-color($primary, 90%);
+    background-color: $primary-bg-subtle;
     color: $primary;
   }
 

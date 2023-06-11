@@ -5,12 +5,32 @@
         <div class="col-lg-9">
             <div class="mb-3">
                 <h2 class="mb-0">{{ .Title }}</h2>
-                {{.Params.location}}
+                {{ .Params.location }}
+                <div class="divider mb-4"></div>
             </div>
             {{ .Content }}
+            <h2>Apply Now</h2>
+            <div class="divider mb-4"></div>
+            <form name="{{ .Title }}" method="POST" netlify>
+                <div class="mb-3">
+                    <label for="inputName" class="form-label text-uppercase">Name <span class="text-primary">*</span></label>
+                    <input name="name" type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="inputEmail" class="form-label text-uppercase">Email <span class="text-primary">*</span></label>
+                    <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Enter your email address" required>
+                </div>
+                <div class="mb-3">
+                    <label for="inputResume" class="form-label text-uppercase">Resume</label>
+                    <input class="form-control" type="file" id="inputResume" required>
+                </div>
+                <div class="mb-3">
+                    <div netlify-recaptcha></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </div>
 </div>
-
 
 {{ end }}
