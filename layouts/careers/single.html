@@ -11,7 +11,7 @@
             {{ .Content }}
             <h2>Apply Now</h2>
             <div class="divider mb-4"></div>
-            <form name="{{ .Title }}" method="POST" netlify>
+            <form name="{{ .Title }}" method="POST" enctype="multipart/form-data" netlify>
                 <div class="mb-3">
                     <label for="inputName" class="form-label text-uppercase">Name <span class="text-primary">*</span></label>
                     <input name="name" type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
@@ -22,7 +22,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="inputResume" class="form-label text-uppercase">Resume</label>
-                    <input class="form-control" type="file" id="inputResume" required>
+                    <input name="resume" class="form-control" type="file" id="inputResume" required>
                 </div>
                 <div class="mb-3">
                     <div netlify-recaptcha></div>
