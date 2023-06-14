@@ -48,6 +48,7 @@ Experience with serverless architecture.
 - A culture that values collaboration, innovation, and inclusion.
 - Alora Labs is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.
 
-Interested candidates are invited to submit their resume and cover letter via our online application platform.
+Interested candidates are invited to submit their resume and cover letter by sending an email to: careers@aloralabs.com
 
 Please note: Due to the high volume of applications we receive, only those selected for an interview will be contacted.
+
