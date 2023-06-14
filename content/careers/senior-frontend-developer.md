@@ -46,3 +46,7 @@ Write clean, efficient, and reusable code using HTML, CSS, and JavaScript, speci
 Join our dynamic and talented team as a Senior Frontend Engineer with a focus on React, and contribute to building innovative solutions that make a real impact. Apply today by submitting your resume, portfolio, and a cover letter explaining why you are the perfect fit for this position. We look forward to hearing from you!
 
 Alora Labs is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, or veteran status.
+
+Interested candidates are invited to submit their resume and cover letter by sending an email to: careers@aloralabs.com
+
+Please note: Due to the high volume of applications we receive, only those selected for an interview will be contacted.
