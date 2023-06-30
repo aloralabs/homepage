@@ -1,6 +1,6 @@
 ---
 title: Services
-description: End-to-end custom IoT product strategy and development services that empower businesses to disrupt their industries. 
+description: End-to-end custom IoT product strategy and development services that empower businesses to disrupt their industries.
 menu:
   main:
     weight: 60
