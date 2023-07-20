@@ -1,18 +1,43 @@
+@import "mixins";
+
 .card {
-  box-shadow: $box-shadow;
-  transition: all 0.2s ease-in-out;
+    box-shadow: $box-shadow;
+    transition: all 0.2s ease-in-out;
 }
 
 .card-hover:hover {
-  box-shadow: $box-shadow-lg;
-  transform: translateY(-3px);
+    box-shadow: $box-shadow-lg;
+    transform: translateY(-3px);
 }
 
 .card-title a {
-  color: $gray-900;
+    color: $gray-900;
 
-  &:hover,
-  &:focus {
-    color: $primary;
-  }
+    &:hover,
+    &:focus {
+        color: $primary;
+    }
+}
+
+.service-card {
+    position: relative;
+    padding-top: 32px;
+
+    &-container {
+        &:not(:last-child) {
+            margin-bottom: 64px;
+        }
+    }
+
+    &-icon {
+        @include box-shadow($primary);
+        position: absolute;
+        top: -32px;
+        left: 20px;
+        background: $primary;
+        height: 64px;
+        width: 64px;
+        padding: 8px;
+        border-radius: 8px;
+    }
 }

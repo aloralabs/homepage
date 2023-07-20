@@ -1,0 +1,18 @@
+<div class="col-md-6 service-card-container">
+    <div class="card h-100 service-card">
+        {{ partial "service-card-icon.html" (dict "icon" .Params.icon) }}
+        <div class="card-body d-flex flex-column">
+            <h4 class="card-title">
+                {{ .Title }} {{ if eq .Params.link "enable" }}
+                <a
+                    href="{{ .RelPermalink }}"
+                    title="Learn more"
+                >
+                    <button aria-label="Learn more" class="btn-learn-more">--></button>
+                </a>
+                {{ end }}
+            </h4>
+            <div class="card-text flex-grow-1">{{ .Params.description }}</div>
+        </div>
+    </div>
+</div>

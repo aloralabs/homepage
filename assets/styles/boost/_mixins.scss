@@ -9,3 +9,7 @@
     }
   }
 }
+
+@mixin box-shadow($color) {
+    box-shadow: 0 0.5rem 1rem rgba($color, 0.15);
+}
