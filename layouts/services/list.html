@@ -4,23 +4,21 @@
     <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
             <h1 class="display-4">Services</h1>
-            <p class="lead">You have big plans to disrupt your industry and improve the lives of others. Here's how we can help.</p>
+            <p class="lead">
+                You have big plans to disrupt your industry and improve the
+                lives of others. Here's how we can help.
+            </p>
         </div>
     </div>
 </div>
 
 <div class="bg-skew bg-skew-light">
-
-<div class="container">
-    <!--<h2 class="text-center" id="projects">Case Studies</h2>
-    <div class="divider mx-auto mb-5"></div>-->
-    <div class="row mb-lg-5">
-        {{ range first 6 (where .Site.RegularPages.ByWeight "Type" "services") }}
-        {{ partial "service-card.html" . }}
-        {{ end }}
+    <div class="container">
+        <div class="row mb-lg-5">
+            {{ range first 6 (where .Site.RegularPages.ByWeight "Type"
+            "services") }} {{ partial "service-card.html" . }} {{ end }}
+        </div>
     </div>
-</div>
-
 
     <!--
     <div class="divider mx-auto"></div>
@@ -46,7 +44,6 @@
         </div>
     </div>
     -->
-
 </div>
 
 {{ end }}

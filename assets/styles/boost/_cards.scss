@@ -17,6 +17,12 @@
     &:focus {
         color: $primary;
     }
+
+    &:hover {
+        & .btn-learn-more {
+            margin-left: 8px;
+        }
+    }
 }
 
 .service-card {
@@ -25,7 +31,7 @@
 
     &-container {
         &:not(:last-child) {
-            margin-bottom: 64px;
+            margin-bottom: 96px;
         }
     }
 
@@ -39,5 +45,8 @@
         width: 64px;
         padding: 8px;
         border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -1,8 +1,6 @@
 <div class="service-card-icon">
     {{ .icon }}
     {{ if ne .icon "default" }}
-    <svg viewBox="0 0 100 100">
-        <circle cx="50" cy="50" r="50" fill="#fff" />
-    </svg>
+    {{ partial "icons/cms.html" }}
     {{ end }}
 </div>
