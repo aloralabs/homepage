@@ -1,6 +1,6 @@
 ---
 title: Product Management
-description: Product Management description
+description: Whether you have an existing product team or building a new one, we can help.
 link: enable
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Hardware Development
-description: Hardware Development description
+description: Whether it's a Proof-of-Concept with Off-the-Shelf components or custom electronics, we got you covered.
 link: enable
 ---
 

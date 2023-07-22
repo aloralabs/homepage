@@ -1,6 +1,6 @@
 ---
 title: UX/UI Design
-description: UX/UI Design description
+description: Create captivating experiences, combining aesthetics and functionality to engage and delight users.
 link: enable
 ---
 
