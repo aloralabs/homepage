@@ -30,6 +30,13 @@
     padding-top: 32px;
 
     &-container {
+        // TODO: Refactor using grid in a future iteration of the website theme
+        &:last-child {
+            .service-card {
+                height: auto !important;
+            }
+        }
+
         &:not(:last-child) {
             margin-bottom: 96px;
         }
