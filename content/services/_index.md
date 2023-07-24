@@ -1,13 +1,13 @@
 ---
 title: Services
-description: End-to-end custom IoT product strategy and development services that empower businesses to disrupt their industries. 
+description: End-to-end custom IoT product strategy and development services that empower businesses to disrupt their industries.
 menu:
   main:
     weight: 60
 ---
 
 <div class="container">
-    <h1 class="py-5 text-center">Services</h1>
+    <h1 class="py-5 text-center">Testing</h1>
 </div>
 
 <div class="bg-skew bg-skew-light mb-5">
