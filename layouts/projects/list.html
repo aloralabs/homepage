@@ -12,10 +12,10 @@
 <div class="bg-skew bg-skew-light">
 
 <div class="container">
-    <h2 class="text-center" id="projects">Case Studies</h2>
-    <div class="divider mx-auto mb-5"></div>
+    <!--<h2 class="text-center" id="projects">Case Studies</h2>
+    <div class="divider mx-auto mb-5"></div>-->
     <div class="row mb-lg-5">
-        {{ range first 6 (where .Site.RegularPages.ByWeight "Type" "projects") }}
+        {{ range first 9 (where .Site.RegularPages.ByWeight "Type" "projects") }}
         {{ $image := .Resources.GetMatch "feature*" }}
         {{ $image = $image.Fill "688x460 center webp" }}
         <div class="col-lg-4 col-md-6 mb-4">
