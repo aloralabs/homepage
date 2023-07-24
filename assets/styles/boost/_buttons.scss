@@ -5,4 +5,17 @@
   &:hover {
     box-shadow: none;
   }
+
+  &-learn-more {
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 40px;
+    transition: $transition;
+    color: $primary;
+    position: relative;
+    top: -2px;
+    margin-left: 4px;
+  }
 }
