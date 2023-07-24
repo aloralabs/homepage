@@ -1,7 +1,7 @@
 ---
 title: Hugo Website Development
 description: Websites designed and built using a framework called Hugo that results in blazing fast and flexibly scalable websites.
-link: enable
+link: disable
 ---
 
 What is Hugo?
