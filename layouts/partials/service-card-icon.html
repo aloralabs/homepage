@@ -1,6 +1,15 @@
 <div class="service-card-icon">
-    {{ .icon }}
-    {{ if ne .icon "default" }}
-    {{ partial "icons/cms.html" }}
+    {{ if eq .icon "custom-software-development.svg" }}
+      {{ partial "icons/custom-software-development.html" }}
+    {{ else if eq .icon "firmware-development.svg" }}
+      {{ partial "icons/firmware-development.html" }}
+    {{ else if eq .icon "hardware-development.md" }}
+      {{ partial "icons/hardware-development.html" }}
+    {{ else if eq .icon "product-management.md" }}
+      {{ partial "icons/product-management.html" }}
+    {{ else if eq .icon "ux-ui-design.svg" }}
+      {{ partial "icons/ux-ui-design.html" }}
+    {{ else }}
+      {{ partial "icons/cms.html" }}
     {{ end }}
 </div>
