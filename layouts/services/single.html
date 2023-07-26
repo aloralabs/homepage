@@ -1,0 +1,97 @@
+{{ define "main" }}
+
+<div class="container">
+    <h1 class="py-5 text-center">{{ .Title }}</h1>
+</div>
+
+<div class="bg-skew bg-skew-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <p class="text-center mb-5 mb-lg-6">{{ .Description }}</p>
+            </div>
+        </div>
+        <!--<div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="row text-center text-md-left">
+                    <div class="col-sm-6 col-md-3 mb-3">
+                        <span class="h5 d-block mb-2">
+                            Company
+                        </span>
+                        <p class="text-secondary">
+                            <a href="{{ .Params.client_website }}" target="_blank">
+                                {{ .Params.client }}
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-3">
+                        <span class="h5 d-block mb-2">
+                            Industry
+                        </span>
+                        <p class="text-secondary">
+                            {{ .Params.industry }}
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-3">
+                        <span class="h5 d-block mb-2">
+                            Service
+                        </span>
+                        <p class="text-secondary">
+                            {{ .Params.service }}
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 mb-3">
+                        <span class="h5 d-block mb-2">
+                            Technologies
+                        </span>
+                        <p class="text-secondary">
+                            {{ .Params.technologies }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider mx-auto mt-4 mb-5"></div>-->
+
+        {{ .Content }}
+
+        <div class="container pb-4">
+            <div class="text-center">
+                <h2 class="mb-4">{{ .Params.cta_heading | default "Interested in learning more?" }}</h2>
+                <div class="mb-4">
+                    <a class="btn btn-primary" href="/contact" role="button">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h2 class="text-center" id="projects">Explore More Case Studies</h2>
+            <div class="divider mx-auto mb-5"></div>
+            <div class="row mb-lg-5">
+                {{ $projects := where .Site.Pages "Type" "projects" }}
+                {{ range first 3 (where $projects "." "ne" $.Page) }}
+                {{ $image := .Resources.GetMatch "feature*" }}
+                {{ $image = $image.Fill "688x460 center webp" }}
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-hover h-100">
+                        <img class="card-img-top" src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title">{{ .Title }}</h4>
+                            <div class="card-text flex-grow-1">{{ .Params.description }}</div>
+                            <a href="{{ .RelPermalink }}" class="stretched-link"><br>Case Study ></a>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <div class="text-center">
+                <div class="divider mx-auto"></div>
+                <p>💡 Check out our guide - <a href="/insights/how-to-develop-your-iot-product/">How To Develop Your IoT Product</a></p>
+                <p>🏆 Latest blog post - <a href="/insights/alora-labs-receives-clutch-2021-top-iot-agency-award/">Alora Labs wins Top IoT Company Award</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}
