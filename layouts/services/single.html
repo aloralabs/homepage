@@ -58,11 +58,11 @@
             <p class="text-center mb-5 mb-lg-6">{{ .Content }}</p>
         </div>
 
-        <div class="divider mx-auto mb-5"></div>
 
         <div class="container pb-4">
             <div class="text-center">
-                <h2 class="mb-4">{{ .Params.cta_heading | default "Interested in learning more?" }}</h2>
+                <h2 class="mb-4">{{ .Params.cta_heading | default "Ready to discuss your project?" }}</h2>
+                <div class="divider mx-auto mb-5"></div>
                 <div class="mb-4">
                     <a class="btn btn-primary" href="/contact" role="button">Contact Us</a>
                 </div>
@@ -70,7 +70,7 @@
         </div>
         <br>
         <div class="container">
-            <h2 class="text-center" id="projects">Explore More Case Studies</h2>
+            <h2 class="text-center" id="projects">Explore Some Case Studies</h2>
             <div class="divider mx-auto mb-5"></div>
             <div class="row mb-lg-5">
                 {{ $projects := where .Site.Pages "Type" "projects" }}
@@ -90,7 +90,7 @@
                 {{ end }}
             </div>
             <div class="text-center">
-                <div class="divider mx-auto"></div>
+                
                 <p>💡 Check out our guide - <a href="/insights/how-to-develop-your-iot-product/">How To Develop Your IoT Product</a></p>
                 <p>🏆 Latest blog post - <a href="/insights/alora-labs-receives-clutch-2021-top-iot-agency-award/">Alora Labs wins Top IoT Company Award</a></p>
             </div>
