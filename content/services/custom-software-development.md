@@ -9,7 +9,7 @@ We are a leading provider of custom software development services, committed to 
 
 ## Frontend Software Development
 
-Our expert team of frontend developers is skilled in creating highly interactive and user-friendly interfaces. We understand that the frontend is crucial for delivering a seamless user experience. Whether you need a web application, mobile app, or desktop software, we've got you covered. We utilize the latest technologies and best practices to ensure your custom software not only looks stunning but also performs flawlessly across all devices.
+Our team is experienced in creating highly interactive and user-friendly frontend interfaces. We understand that the frontend is crucial for delivering a seamless user experience. Whether you need a web application, mobile app, or website, we've got you covered. We utilize the latest technologies and best practices to ensure your custom software not only looks stunning but is also responsive and performs flawlessly across all devices.
 
 ## Backend Software Development
 
