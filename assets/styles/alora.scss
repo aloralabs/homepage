@@ -3,6 +3,15 @@ $hamburger-layer-color: #343a40;
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
 @import "./boost/style.scss";
 
+@font-face {
+    font-family: Lexend;
+    src: url(Lexend-Regular.ttf);
+}
+
+* {
+    font-family: Lexend, Arial, Helvetica, sans-serif !important;
+}
+
 body {
     touch-action: pan-x pan-y;
 }
@@ -96,9 +105,13 @@ html {
 a {
     text-decoration: underline;
     text-decoration-style: dotted;
-    text-underline-offset: .125em;
+    text-underline-offset: 0.125em;
 }
 
 a:hover {
-    text-decoration-style: solid
+    text-decoration-style: solid;
+}
+
+.testimonial-name {
+    font-size: 1.1rem;
 }
