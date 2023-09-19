@@ -3,16 +3,6 @@ $hamburger-layer-color: #343a40;
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
 @import "./boost/style.scss";
 
-@font-face {
-    font-family: Lexend;
-    src: url(Lexend-Regular.ttf);
-}
-
-@font-face {
-    font-family: Mukta;
-    src: url(MuktaMalar-Regular.ttf);
-}
-
 * {
     font-family: Mukta, Arial, Helvetica, sans-serif !important;
 }
