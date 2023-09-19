@@ -8,8 +8,13 @@ $hamburger-layer-color: #343a40;
     src: url(Lexend-Regular.ttf);
 }
 
+@font-face {
+    font-family: Mukta;
+    src: url(MuktaMalar-Regular.ttf);
+}
+
 * {
-    font-family: Lexend, Arial, Helvetica, sans-serif !important;
+    font-family: Mukta, Arial, Helvetica, sans-serif !important;
 }
 
 body {
@@ -98,8 +103,13 @@ html {
 }
 
 .hero-awards {
-    max-width: 120px;
+    max-width: 80px;
     margin-top: 24px;
+    margin-right: 18px;
+}
+
+.mt-140 {
+    margin-top: 140px;
 }
 
 a {
@@ -114,4 +124,48 @@ a:hover {
 
 .testimonial-name {
     font-size: 1.1rem;
+}
+#content {
+    padding-top: 6rem;
+}
+
+h1.award-title {
+    color: black;
+    font-weight: 800;
+}
+.title-container {
+    width: 40vw;
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+    }
+}
+.circle-container {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+.circle-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index:-1;
+    width: 60vw;
+}
+.circle-content {
+    position: absolute;
+    width: 45vw;
+    right: 50px;
+    @media screen and (max-width: 768px) {
+        right: 20px;
+    }
+}
+.vertical-align-inherit {
+    vertical-align: inherit;
+}
+.services-container {
+    margin-top: 8rem;
+    @media screen and (max-width: 1024px) {
+        margin-top: 0;
+        padding-top: 0;
+    }
 }
