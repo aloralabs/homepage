@@ -125,12 +125,13 @@ h1.award-title {
 }
 .title-container {
     width: 40vw;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         width: 100vw;
     }
 }
 .circle-container {
-    @media screen and (max-width: 768px) {
+    width: 50%;
+    @media screen and (max-width: 1024px) {
         display: none;
     }
 }
@@ -138,14 +139,15 @@ h1.award-title {
     position: absolute;
     top: 0;
     right: 0;
-    z-index:-1;
-    width: 60vw;
+    z-index: -1;
+    width: 55vw;
+    height: 100vh;
 }
 .circle-content {
     position: absolute;
     width: 45vw;
     right: 50px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         right: 20px;
     }
 }
@@ -157,5 +159,128 @@ h1.award-title {
     @media screen and (max-width: 1024px) {
         margin-top: 0;
         padding-top: 0;
+    }
+}
+
+.hero-padding-right {
+    padding-right: 150px;
+}
+
+.hero-card {
+    position: relative;
+    margin-top: 16px;
+    .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        p {
+            margin-left: 10px;
+            margin-bottom: 0;
+        }
+    }
+    .card-text {
+        font-size: 12px;
+        line-height: 98%;
+    }
+    .card-header-text {
+        font-size: 16px;
+    }
+    .line-2 {
+        position: absolute;
+        right: 0;
+        top: 64px;
+    }
+    .line-1 {
+        position: absolute;
+        right: 155px;
+        top: 64px;
+    }
+    .product-card {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        width: 317px;
+        .product-card-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .card-container-box {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            .card-content {
+                .card-text {
+                    width: 230px;
+                    margin-left: 38px;
+                }
+            }
+        }
+    }
+    .design-card {
+        position: absolute;
+        right: 25px;
+        top: 136px;
+        width: 263px;
+        .design-card-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .card-container-box {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            .card-content {
+                .card-text {
+                    width: 150px;
+                    margin-left: 38px;
+                }
+            }
+        }
+    }
+    .dev-card {
+        position: absolute;
+        right: 290px;
+        top: 136px;
+        width: 317px;
+        .dev-card-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .card-container-box {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            .card-content {
+                .card-text {
+                    width: 230px;
+                    margin-left: 38px;
+                }
+            }
+        }
+    }
+    .launch-card {
+        position: absolute;
+        right: 25px;
+        top: 325px;
+        width: 317px;
+        .launch-card-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .card-container-box {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            .card-content {
+                .card-text {
+                    width: 230px;
+                    margin-left: 38px;
+                }
+            }
+        }
     }
 }
