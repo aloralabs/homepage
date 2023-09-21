@@ -193,13 +193,18 @@ h1.award-title {
     }
     .product-card {
         position: absolute;
-        right: 25px;
+        right: 28px;
         top: 0;
-        width: 317px;
+        width: 310px;
+        height: 120px;
         .product-card-box {
             position: absolute;
             top: 0;
             right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
         }
         .card-container-box {
             position: absolute;
@@ -215,13 +220,18 @@ h1.award-title {
     }
     .design-card {
         position: absolute;
-        right: 25px;
+        right: 28px;
         top: 136px;
-        width: 263px;
+        width: 258px;
+        height: 105px;
         .design-card-box {
             position: absolute;
             top: 0;
             right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
         }
         .card-container-box {
             position: absolute;
@@ -237,13 +247,18 @@ h1.award-title {
     }
     .dev-card {
         position: absolute;
-        right: 290px;
+        right: 295px;
         top: 136px;
-        width: 317px;
+        width: 310px;
+        height: 105px;
         .dev-card-box {
             position: absolute;
             top: 0;
             right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
         }
         .card-container-box {
             position: absolute;
@@ -259,13 +274,18 @@ h1.award-title {
     }
     .launch-card {
         position: absolute;
-        right: 25px;
+        right: 28px;
         top: 325px;
-        width: 317px;
+        width: 310px;
+        height: 105px;
         .launch-card-box {
             position: absolute;
             top: 0;
             right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
         }
         .card-container-box {
             position: absolute;
