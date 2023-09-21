@@ -97,6 +97,11 @@ html {
     max-width: 120px;
     margin-top: 24px;
     margin-right: 18px;
+    @media screen and (max-width: 1024px) {
+        max-width: 80px;
+        margin-top: 24px;
+        margin-right: 18px;
+    }
 }
 
 a {
@@ -114,6 +119,9 @@ a:hover {
 }
 #content {
     padding-top: 6rem;
+    @media screen and (max-width: 1024px) {
+        padding-top: 0;
+    }
 }
 
 h1.award-title {
@@ -155,7 +163,7 @@ h1.award-title {
     // margin-top: 8rem;
     @media screen and (max-width: 1024px) {
         margin-top: 0;
-        padding-top: 0;
+        padding-top: 3rem;
     }
 }
 
