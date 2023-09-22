@@ -1,26 +1,34 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    @media screen and (max-width: 1024px) {
+      position: relative;
+    }
+}
 .navbar {
-
-  .navbar-brand > img {
-    max-height: 30px;
-    width: auto;
-  }
-
-  .nav-link {
-    text-transform: uppercase;  
-  }
-
-  @include media-breakpoint-down(lg) {
-    .nav-link {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+    .navbar-brand > img {
+        max-height: 30px;
+        width: auto;
     }
 
     .nav-link {
-      border-bottom: 1px solid $gray-200;
+        text-transform: uppercase;
     }
-  }
 
-  @include media-breakpoint-up(lg) {
-    font-size: $font-size-sm;
-  }
+    @include media-breakpoint-down(lg) {
+        .nav-link {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .nav-link {
+            border-bottom: 1px solid $gray-200;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: $font-size-sm;
+    }
 }
