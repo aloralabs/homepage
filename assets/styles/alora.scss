@@ -127,6 +127,9 @@ a:hover {
 h1.award-title {
     color: black;
     font-weight: 800;
+    @media screen and (max-width: 1440px) {
+        font-size: 2.7rem;
+    }
 }
 .title-container {
     width: 40vw;
