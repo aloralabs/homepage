@@ -130,11 +130,18 @@ h1.award-title {
     @media screen and (max-width: 1440px) {
         font-size: 2.7rem;
     }
+    @media screen and (max-width: 425px) {
+        font-size: 2.3rem;
+    }
 }
 .title-container {
     width: 40vw;
     @media screen and (max-width: 1024px) {
         width: 100vw;
+        padding-right: 150px;
+    }
+    @media screen and (max-width: 425px) {
+        padding-right: 0;
     }
 }
 .circle-container {
