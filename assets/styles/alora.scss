@@ -317,6 +317,7 @@ h1.award-title {
     border: 1px solid rgb(207, 207, 207);
     border-radius: 1rem;
     padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
     .dots-img {
         width: 30px;
         margin-bottom: 1rem;
@@ -329,4 +330,8 @@ h1.award-title {
         left: 50%;
         transform: translate(-50%, 0);
     }
+}
+
+.testimonial-divider {
+    margin-bottom: 80px;
 }
