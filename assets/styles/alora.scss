@@ -3,6 +3,10 @@ $hamburger-layer-color: #343a40;
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
 @import "./boost/style.scss";
 
+* {
+    font-family: Mukta, Arial, Helvetica, sans-serif !important;
+}
+
 body {
     touch-action: pan-x pan-y;
 }
@@ -75,6 +79,7 @@ html {
 }
 
 .bg-skew {
+    margin-top: -100px;
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
@@ -91,14 +96,250 @@ html {
 .hero-awards {
     max-width: 120px;
     margin-top: 24px;
+    margin-right: 18px;
+    @media screen and (max-width: 1024px) {
+        max-width: 80px;
+        margin-top: 24px;
+        margin-right: 18px;
+    }
 }
 
 a {
     text-decoration: underline;
     text-decoration-style: dotted;
-    text-underline-offset: .125em;
+    text-underline-offset: 0.125em;
 }
 
 a:hover {
-    text-decoration-style: solid
+    text-decoration-style: solid;
+}
+
+.testimonial-name {
+    font-size: 1.1rem;
+}
+#content {
+    padding-top: 6rem;
+    @media screen and (max-width: 1024px) {
+        padding-top: 0;
+    }
+}
+
+h1.award-title {
+    color: black;
+    font-weight: 800;
+    font-size: 3rem;
+    @media screen and (max-width: 1510px) {
+        font-size: 2.7rem;
+    }
+    @media screen and (max-width: 425px) {
+        font-size: 2.3rem;
+    }
+}
+.title-container {
+    width: 40vw;
+    @media screen and (max-width: 1024px) {
+        width: 100vw;
+        padding-right: 150px;
+    }
+    @media screen and (max-width: 425px) {
+        padding-right: 0;
+    }
+}
+.circle-container {
+    width: 50%;
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+.circle-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 55vw;
+    height: 100vh;
+}
+.circle-content {
+    position: absolute;
+    width: 45vw;
+    right: 50px;
+    @media screen and (max-width: 1024px) {
+        right: 20px;
+    }
+}
+.vertical-align-inherit {
+    vertical-align: inherit;
+}
+.services-container {
+    // margin-top: 8rem;
+    @media screen and (max-width: 1024px) {
+        margin-top: 0;
+        padding-top: 3rem;
+    }
+}
+
+// .hero-padding-right {
+//     padding-right: 150px;
+// }
+
+.hero-card {
+    position: relative;
+    margin-top: 16px;
+    .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        p {
+            margin-left: 10px;
+            margin-bottom: 0;
+        }
+    }
+    .card-text {
+        font-size: 12px;
+        line-height: 98%;
+    }
+    .card-header-text {
+        font-size: 16px;
+    }
+    .line-2 {
+        position: absolute;
+        right: 0;
+        top: 64px;
+    }
+    .line-1 {
+        position: absolute;
+        right: 155px;
+        top: 64px;
+    }
+    .product-card {
+        position: absolute;
+        right: 28px;
+        top: 0;
+        width: 310px;
+        height: 90px;
+        .product-card-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+        }
+        .card-container-box {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            .card-content {
+                .card-text {
+                    width: 245px;
+                    margin-left: 37px;
+                }
+            }
+        }
+    }
+    .design-card {
+        position: absolute;
+        right: 28px;
+        top: 136px;
+        width: 258px;
+        height: 90px;
+        .design-card-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+        }
+        .card-container-box {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            .card-content {
+                .card-text {
+                    margin-left: 41px;
+                }
+            }
+        }
+    }
+    .dev-card {
+        position: absolute;
+        right: 295px;
+        top: 136px;
+        width: 310px;
+        height: 90px;
+        .dev-card-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+        }
+        .card-container-box {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            .card-content {
+                .card-text {
+                    width: 230px;
+                    margin-left: 35px;
+                }
+            }
+        }
+    }
+    .launch-card {
+        position: absolute;
+        right: 28px;
+        top: 325px;
+        width: 310px;
+        height: 90px;
+        .launch-card-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+        }
+        .card-container-box {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            .card-content {
+                .card-text {
+                    width: 230px;
+                    margin-left: 36px;
+                }
+            }
+        }
+    }
+}
+
+.testimonial-box {
+    position: relative;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 1rem;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    .dots-img {
+        width: 30px;
+        margin-bottom: 1rem;
+    }
+    .avatar {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+.testimonial-divider {
+    margin-bottom: 80px;
 }
