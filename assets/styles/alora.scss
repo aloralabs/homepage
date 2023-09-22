@@ -167,9 +167,9 @@ h1.award-title {
     }
 }
 
-.hero-padding-right {
-    padding-right: 150px;
-}
+// .hero-padding-right {
+//     padding-right: 150px;
+// }
 
 .hero-card {
     position: relative;
@@ -205,7 +205,7 @@ h1.award-title {
         right: 28px;
         top: 0;
         width: 310px;
-        height: 120px;
+        height: 90px;
         .product-card-box {
             position: absolute;
             top: 0;
@@ -221,8 +221,8 @@ h1.award-title {
             left: 15px;
             .card-content {
                 .card-text {
-                    width: 230px;
-                    margin-left: 38px;
+                    width: 245px;
+                    margin-left: 37px;
                 }
             }
         }
@@ -232,7 +232,7 @@ h1.award-title {
         right: 28px;
         top: 136px;
         width: 258px;
-        height: 105px;
+        height: 90px;
         .design-card-box {
             position: absolute;
             top: 0;
@@ -248,8 +248,7 @@ h1.award-title {
             left: 15px;
             .card-content {
                 .card-text {
-                    width: 150px;
-                    margin-left: 38px;
+                    margin-left: 41px;
                 }
             }
         }
@@ -259,7 +258,7 @@ h1.award-title {
         right: 295px;
         top: 136px;
         width: 310px;
-        height: 105px;
+        height: 90px;
         .dev-card-box {
             position: absolute;
             top: 0;
@@ -276,7 +275,7 @@ h1.award-title {
             .card-content {
                 .card-text {
                     width: 230px;
-                    margin-left: 38px;
+                    margin-left: 35px;
                 }
             }
         }
@@ -286,7 +285,7 @@ h1.award-title {
         right: 28px;
         top: 325px;
         width: 310px;
-        height: 105px;
+        height: 90px;
         .launch-card-box {
             position: absolute;
             top: 0;
@@ -303,9 +302,28 @@ h1.award-title {
             .card-content {
                 .card-text {
                     width: 230px;
-                    margin-left: 38px;
+                    margin-left: 36px;
                 }
             }
         }
+    }
+}
+
+.testimonial-box {
+    position: relative;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 1rem;
+    padding-top: 1rem !important;
+    .dots-img {
+        width: 30px;
+        margin-bottom: 1rem;
+    }
+    .avatar {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 }
