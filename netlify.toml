@@ -9,7 +9,7 @@ HUGO_VERSION = "0.111.3"
 HUGO_VERSION = "0.111.3"
 
 [[redirects]]
-from = "https://aloralabs.netlify.com/*"
+from = "https://aloralabs.netlify.com/"
 to = "https://aloralabs.com/:splat"
 force = true
 
