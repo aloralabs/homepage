@@ -1,228 +1,230 @@
 {{ define "main" }}
 <!-- Hero -->
-<div class="container d-flex justify-content-between mb-lg-3">
-    <div class="title-container row py-5 py-lg-6">
-        <div class="col-lg-10 text-left pb-4 hero-padding-right">
-            <p class="pt-3">
-                <span>
-                    <img class="m-0 vertical-align-inherit" src="/img/star.svg" alt="star">
-                </span>
-                FOR INNOVATORS
-            </p>
-            <h1 class="award-title pt-3 mb-3">Award-winning Product Consultancy</h1>
-            <p class="pt-3">
-                Product strategy, design and development partner that has built and scaled products to millions of
-                users, helping generate millions in revenue.
-            </p>
-            <div class="py-2">
-                <a id="contact-us-button-home" class="btn btn-primary" href="/projects" role="button">Our work</a>
-            </div>
-            <div class="px-0 pt-3 d-flex text-center">
-                <div class="p-0">
-                    <a href="https://clutch.co/profile/alora-labs" target="_blank">
-                        <img class="hero-awards" src="/img/Social_Developers_Canada_2021.png"
-                            alt="Canada's Top Software Developers Award 2021">
-                    </a>
-                </div>
-                <div class="p-0">
-                    <a href="https://clutch.co/profile/alora-labs" target="_blank">
-                        <img class="hero-awards" src="/img/B2B_Companies_Canada_2021.png"
-                            alt="Canada's Top B2B Companies Award 2021">
-                    </a>
-                </div>
-                <div class="p-0">
-                    <a href="https://clutch.co/profile/alora-labs" target="_blank">
-                        <img class="hero-awards" src="/img/top_clutch_iot_company_canada_2023.png"
-                            alt="Canada's Top B2B Companies Award 2021">
-                    </a>
-                </div>
-            </div>
-            <!--<script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script> <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="45" data-nofollow="true" data-expandifr="true" data-scale="100" data-clutchcompany-id="1632192"></div>-->
-            <!--<a class="btn btn-primary" href="#process">Learn More</a>-->
-        </div>
-    </div>
-    <div class="circle-container py-5 py-lg-6">
-        <img class="circle-background" src="./img/Mesh-Grad.png" />
-        <div class="hero-card">
-            <img class="line-1" src="./img/line_i.svg" />
-            <img class="line-2" src="./img/line_s.svg" />
-            <div class="product-card">
-                <div class="product-card-box"></div>
-                <div class="card-container-box">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <img class="product-card-icon" src="./img/product_i.svg" />
-                            <p class="card-header-text">Product Management</p>
-                        </div>
-                        <p class="card-text">User Research, Product Strategy, Roadmapping, Go-To-Market</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dev-card">
-                <div class="dev-card-box"></div>
-                <div class="card-container-box">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <img class="design-card-icon" src="./img/design_i.svg" />
-                            <p class="card-header-text">Design</p>
-                        </div>
-                        <p class="card-text">UX/UI Design, Web Design, Mechanical and Industrial Design, Design For
-                            Manufacturing</p>
-                    </div>
-                </div>
-            </div>
-            <div class="design-card">
-                <div class="design-card-box"></div>
-                <div class="card-container-box">
-                    <div class="card-content">
+<main id="content">
+    <div style="position: relative;">
+        <div class="home-gradient mask2"></div>
 
-                        <div class="card-header">
-                            <img class="dev-card-icon" src="./img/dev_i.svg" />
-                            <p class="card-header-text">Development</p>
-                        </div>
-                        <p class="card-text">Frontend, Backend, Infrastructure, DevOps, Firmware, and Hardware</p>
-                    </div>
-                </div>
-            </div>
-            <div class="launch-card">
-                <div class="launch-card-box"></div>
-                <div class="card-container-box">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <img class="launch-card-icon" src="./img/launch_i.svg" />
-                            <p class="card-header-text">Launch</p>
-                        </div>
-                        <p class="card-text">User Feedback, Scaling Infrastructure, Feature Enhancements,
-                            Product-Led-Growth Tactics</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="bg-skew bg-skew-light mb-5 services-container">
-    <h2 class="text-center">Services</h2>
-    <div class="divider mx-auto mb-5"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="px-lg-3 text-center">
-                    <img src="/services/web-apps.svg" alt="Web and Mobile Web Applications" height="140" loading="lazy"
-                        class="mb-4">
-                    <h4>Web Apps</h4>
-                    <p class="mb-md-0">Web platforms, dashboards, and SaaS products</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="px-lg-3 text-center">
-                    <img src="/services/infra.svg" alt="Cloud Infrastructure" height="140" loading="lazy" class="mb-4">
-                    <h4>Backend Infrastructure</h4>
-                    <p class="mb-md-0">DevOps and data architecture strategy to scale your product</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="px-lg-3 text-center">
-                    <img src="/services/electronics.svg" alt="Hardware develpoment and electronics" height="140"
-                        loading="lazy" class="mb-4">
-                    <h4>IoT Development</h4>
-                    <p class="mb-md-0">Smart IoT devices using wireless communication technologies</p>
-                </div>
-            </div>
-            <div class="col-md-4 offset-md-2 mb-4">
-                <div class="px-lg-3 text-center">
-                    <img src="/services/ux-ui-design.svg" alt="UX/UI design" height="140" loading="lazy" class="mb-4">
-                    <h4>UX/UI Design</h4>
-                    <p class="mb-md-0">Wireframing, prototyping, and designing intuitive interfaces</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="px-lg-3 text-center">
-                    <img src="/services/product-management.svg" height="140" loading="lazy" class="mb-4">
-                    <h4>Product Management</h4>
-                    <p class="mb-md-0">Prioritization, roadmap creation, and go-to-market strategy</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<section class="container py-5 px-0">
-    <h2 class="text-center">What our customers are saying</h2>
-    <div class="divider mx-auto testimonial-divider"></div>
-    <div class="row">
-        <div class="col-md">
-            <blockquote class="bg-white testimonial-box mb-4 p-4 text-left">
-                <img class="avatar avatar-md mb-4" src="/img/greg-gray.jpeg" alt="Greg Gray">
-                <img class="dots-img" src="/img/dots.svg" alt="dots">
-                <p>Their ability to lead us through the discovery, design, development and execution of getting our
-                    solution was key to its success. We trust them as a valuable partner in our business.</p>
-                <p class="testimonial-name m-0"><b>Greg Gray</b></p>
-                <p class="m-0"><em>Director Technology & Manufacturing, Pool Safe</em></p>
-
-            </blockquote>
-        </div>
-        <div class="col-md">
-            <blockquote class="bg-white testimonial-box mb-4 p-4 text-left">
-                <img class="avatar avatar-md mb-4" src="img/nathan-mero.jpg" alt="Nathan Mah">
-                <img class="dots-img" src="/img/dots.svg" alt="dots">
-                <p>Working with Alora Labs has been a great pleasure, and integral to the growth of our business. They
-                    build products that are intended to last, and always think quality first.</p>
-                <p class="testimonial-name m-0"><b>Nathan Mah</b></p>
-                <p class="m-0"><em>CEO, Mero</em></p>
-            </blockquote>
-        </div>
-        <div class="col-md">
-            <blockquote class="bg-white testimonial-box mb-4 p-4 text-left">
-                <img class="avatar avatar-md mb-4" src="/img/greg-carter.jpeg" alt="Greg Carter">
-                <img class="dots-img" src="/img/dots.svg" alt="dots">
-                <p>We had a serious issue with our IoT prototype. The app was not able to communicate properly to
-                    operate our smart device. They discovered the problem and wrote new firmware to solve the problem.
+    <div class="container d-flex justify-content-between mb-lg-3">
+        <div class="title-container row py-5 py-lg-6">
+            <div class="col-lg-10 text-left pb-4 hero-padding-right">
+                <p class="pt-3">
+                    <span>
+                        <img class="m-0 vertical-align-inherit" src="/img/star.svg" alt="star">
+                    </span>
+                    FOR INNOVATORS
                 </p>
-                <p class="testimonial-name m-0"><b>Greg Carter</b></p>
-                <p class="m-0"><em>Founder, Hydravent</em></p>
-            </blockquote>
-        </div>
-    </div>
-</section>
-
-<div class="container">
-    <h2 class="text-center" id="projects">Case Studies</h2>
-    <div class="divider mx-auto mb-5"></div>
-    <div class="row mb-lg-5">
-        {{ range first 3 (where .Site.RegularPages.ByWeight "Type" "projects") }}
-        {{ $image := .Resources.GetMatch "feature*" }}
-        {{ $image = $image.Fill "688x460 center webp" }}
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card card-hover h-100">
-                <img class="card-img-top" src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
-                <div class="card-body d-flex flex-column">
-                    <h4 class="card-title">{{ .Title }}</h4>
-                    <div class="card-text flex-grow-1">{{ .Params.description }}</div>
-                    <a href="{{ .RelPermalink }}" class="small stretched-link text-decoration-none"><br>Case
-                        Study ></a>
+                <h1 class="award-title pt-3 mb-3">Award-winning Product Consultancy</h1>
+                <p class="pt-3">
+                    Product strategy, design and development partner that has built and scaled products to millions of
+                    users, helping generate millions in revenue.
+                </p>
+                <div class="py-2">
+                    <a id="contact-us-button-home" class="btn btn-primary" href="/projects" role="button">Our work</a>
+                </div>
+                <div class="px-0 pt-3 d-flex text-center">
+                    <div class="p-0">
+                        <a href="https://clutch.co/profile/alora-labs" target="_blank">
+                            <img class="hero-awards" src="/img/Social_Developers_Canada_2021.png"
+                                alt="Canada's Top Software Developers Award 2021">
+                        </a>
+                    </div>
+                    <div class="p-0">
+                        <a href="https://clutch.co/profile/alora-labs" target="_blank">
+                            <img class="hero-awards" src="/img/B2B_Companies_Canada_2021.png"
+                                alt="Canada's Top B2B Companies Award 2021">
+                        </a>
+                    </div>
+                    <div class="p-0">
+                        <a href="https://clutch.co/profile/alora-labs" target="_blank">
+                            <img class="hero-awards" src="/img/top_clutch_iot_company_canada_2023.png"
+                                alt="Canada's Top B2B Companies Award 2021">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        {{ end }}
+        <div class="circle-container py-5 py-lg-6">
+            <div class="hero-card">
+                <img class="line-1" src="/img/line_i.svg" />
+                <img class="line-2" src="/img/line_s.svg" />
+                <div class="product-card">
+                    <div class="product-card-box"></div>
+                    <div class="card-container-box">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <img class="product-card-icon" src="/img/product_i.svg" />
+                                <p class="card-header-text">Product Management</p>
+                            </div>
+                            <p class="card-text">User Research, Product Strategy, Roadmapping, Go-To-Market</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dev-card">
+                    <div class="dev-card-box"></div>
+                    <div class="card-container-box">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <img class="design-card-icon" src="/img/design_i.svg" />
+                                <p class="card-header-text">Design</p>
+                            </div>
+                            <p class="card-text">UX/UI Design, Web Design, Mechanical and Industrial Design, Design For
+                                Manufacturing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="design-card">
+                    <div class="design-card-box"></div>
+                    <div class="card-container-box">
+                        <div class="card-content">
+                                <div class="card-header">
+                                    <img class="dev-card-icon" src="/img/dev_i.svg" />
+                                    <p class="card-header-text">Development</p>
+                                </div>
+                                <p class="card-text">Frontend, Backend, Infrastructure, DevOps, Firmware, and Hardware</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="launch-card">
+                        <div class="launch-card-box"></div>
+                        <div class="card-container-box">
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <img class="launch-card-icon" src="/img/launch_i.svg" />
+                                    <p class="card-header-text">Launch</p>
+                                </div>
+                                <p class="card-text">User Feedback, Scaling Infrastructure, Feature Enhancements,
+                                    Product-Led-Growth Tactics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="text-center py-4">
-        <h2 class="mb-4">Interested in learning more?</h2>
-        <a id="contact-us-button-home" class="btn btn-primary" href="/contact" role="button">Contact Us</a>
-        <p class="mt-4">
-            🏆 Latest blog post - <a href="/insights/alora-labs-receives-clutch-2021-top-iot-agency-award/">Alora
-                Labs
-                wins Top IoT Company Award</a>
-        </p>
-        <p>
-            💡 Check out our guide - <a href="/insights/how-to-develop-your-iot-product/">How To Develop Your
-                IoT
-                Product</a>
-        </p>
+    <div class="bg-skew bg-skew-light mb-5 services-container">
+        <h2 class="text-center">Services</h2>
+        <div class="divider mx-auto mb-5"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="px-lg-3 text-center">
+                        <img src="/services/web-apps.svg" alt="Web and Mobile Web Applications" height="140" loading="lazy"
+                            class="mb-4">
+                        <h4>Web Apps</h4>
+                        <p class="mb-md-0">Web platforms, dashboards, and SaaS products</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="px-lg-3 text-center">
+                        <img src="/services/infra.svg" alt="Cloud Infrastructure" height="140" loading="lazy" class="mb-4">
+                        <h4>Backend Infrastructure</h4>
+                        <p class="mb-md-0">DevOps and data architecture strategy to scale your product</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="px-lg-3 text-center">
+                        <img src="/services/electronics.svg" alt="Hardware develpoment and electronics" height="140"
+                            loading="lazy" class="mb-4">
+                        <h4>IoT Development</h4>
+                        <p class="mb-md-0">Smart IoT devices using wireless communication technologies</p>
+                    </div>
+                </div>
+                <div class="col-md-4 offset-md-2 mb-4">
+                    <div class="px-lg-3 text-center">
+                        <img src="/services/ux-ui-design.svg" alt="UX/UI design" height="140" loading="lazy" class="mb-4">
+                        <h4>UX/UI Design</h4>
+                        <p class="mb-md-0">Wireframing, prototyping, and designing intuitive interfaces</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="px-lg-3 text-center">
+                        <img src="/services/product-management.svg" height="140" loading="lazy" class="mb-4">
+                        <h4>Product Management</h4>
+                        <p class="mb-md-0">Prioritization, roadmap creation, and go-to-market strategy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+
+    <section class="container py-5">
+        <h2 class="text-center">What our customers are saying</h2>
+        <div class="divider mx-auto testimonial-divider"></div>
+        <div class="row">
+            <div class="col-md">
+                <blockquote class="bg-white testimonial-box mb-4 p-4 text-left">
+                    <img class="avatar avatar-md mb-4" src="/img/greg-gray.jpeg" alt="Greg Gray">
+                    <img class="dots-img" src="/img/dots.svg" alt="dots">
+                    <p>Their ability to lead us through the discovery, design, development and execution of getting our
+                        solution was key to its success. We trust them as a valuable partner in our business.</p>
+                    <p class="testimonial-name m-0"><b>Greg Gray</b></p>
+                    <p class="m-0"><em>Director Technology & Manufacturing, Pool Safe</em></p>
+                </blockquote>
+            </div>
+            <div class="col-md">
+                <blockquote class="bg-white testimonial-box mb-4 p-4 text-left">
+                    <img class="avatar avatar-md mb-4" src="img/nathan-mero.jpg" alt="Nathan Mah">
+                    <img class="dots-img" src="/img/dots.svg" alt="dots">
+                    <p>Working with Alora Labs has been a great pleasure, and integral to the growth of our business. They
+                        build products that are intended to last, and always think quality first.</p>
+                    <p class="testimonial-name m-0"><b>Nathan Mah</b></p>
+                    <p class="m-0"><em>CEO, Mero</em></p>
+                </blockquote>
+            </div>
+            <div class="col-md">
+                <blockquote class="bg-white testimonial-box mb-4 p-4 text-left">
+                    <img class="avatar avatar-md mb-4" src="/img/greg-carter.jpeg" alt="Greg Carter">
+                    <img class="dots-img" src="/img/dots.svg" alt="dots">
+                    <p>We had a serious issue with our IoT prototype. The app was not able to communicate properly to
+                        operate our smart device. They discovered the problem and wrote new firmware to solve the problem.
+                    </p>
+                    <p class="testimonial-name m-0"><b>Greg Carter</b></p>
+                    <p class="m-0"><em>Founder, Hydravent</em></p>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 class="text-center" id="projects">Case Studies</h2>
+        <div class="divider mx-auto mb-5"></div>
+        <div class="row mb-lg-5">
+            {{ range first 3 (where .Site.RegularPages.ByWeight "Type" "projects") }}
+            {{ $image := .Resources.GetMatch "feature*" }}
+            {{ $image = $image.Fill "688x460 center webp" }}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card card-hover h-100">
+                    <img class="card-img-top" src="{{ $image.RelPermalink }}" alt="{{ .Title }}">
+                    <div class="card-body d-flex flex-column">
+                        <h4 class="card-title">{{ .Title }}</h4>
+                        <div class="card-text flex-grow-1">{{ .Params.description }}</div>
+                        <a href="{{ .RelPermalink }}" class="small stretched-link text-decoration-none"><br>Case
+                            Study ></a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-center py-4">
+            <h2 class="mb-4">Interested in learning more?</h2>
+            <a id="contact-us-button-home" class="btn btn-primary" href="/contact" role="button">Contact Us</a>
+            <p class="mt-4">
+                🏆 Latest blog post - <a href="/insights/alora-labs-receives-clutch-2021-top-iot-agency-award/">Alora
+                    Labs
+                    wins Top IoT Company Award</a>
+            </p>
+            <p>
+                💡 Check out our guide - <a href="/insights/how-to-develop-your-iot-product/">How To Develop Your
+                    IoT
+                    Product</a>
+            </p>
+        </div>
+    </div>
+
+</main>
 
 {{ end }}
