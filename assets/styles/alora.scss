@@ -118,7 +118,7 @@ a:hover {
     font-size: 1.1rem;
 }
 #content {
-    padding-top: 6rem;
+    // padding-top: 6rem;
     @media screen and (max-width: 1024px) {
         padding-top: 0;
     }
@@ -177,10 +177,6 @@ h1.award-title {
         padding-top: 3rem;
     }
 }
-
-// .hero-padding-right {
-//     padding-right: 150px;
-// }
 
 .hero-card {
     position: relative;
@@ -342,4 +338,30 @@ h1.award-title {
 
 .testimonial-divider {
     margin-bottom: 80px;
+}
+
+.mask2 {
+    mask-image: radial-gradient(circle at 80% 40%, #000 40%, transparent 60%);
+}
+
+.home-gradient {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0%;
+    background: linear-gradient(45deg, rgba(205,172,255,1) 25%, rgba(167,237,255,1) 75%);
+    background-size: 75% 100%;
+    background-repeat: no-repeat;
+    background-position: right 25%;
+    @media screen and (max-width: 1024px) {
+        background-size: 100% 100%;
+    }
+}
+
+.header {
+    z-index: 1;
 }
